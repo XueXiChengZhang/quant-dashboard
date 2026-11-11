@@ -1,0 +1,130 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>量化看盘台</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0f1218;color:#e6e9ef;font:14px/1.5 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif;padding:18px}
+h1{font-size:19px;font-weight:600;letter-spacing:.5px}
+h2{font-size:14px;font-weight:600;color:#9aa4b8;margin:0 0 10px;display:flex;align-items:center;gap:8px}
+h2 .tag{font-size:11px;color:#5c6678;background:#1a1f29;padding:2px 7px;border-radius:9px;font-weight:400}
+.wrap{max-width:1180px;margin:0 auto}
+.card{background:#161b24;border:1px solid #232a36;border-radius:10px;padding:14px 16px;margin-bottom:14px}
+.top{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:10px;margin-bottom:12px}
+.meta{color:#6b7688;font-size:12px}
+.kpis{display:flex;gap:22px;flex-wrap:wrap}
+.kpi .v{font-size:20px;font-weight:600;font-variant-numeric:tabular-nums}
+.kpi .l{font-size:11px;color:#6b7688;margin-top:1px}
+.up{color:#3ddc97}.down{color:#ff6b6b}.flat{color:#9aa4b8}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th{font-weight:500;color:#8b95a8;font-size:11.5px;text-align:right;padding:6px 8px;border-bottom:1px solid #2a323f}
+th:first-child{text-align:left}
+td{padding:5px 8px;text-align:right;border-bottom:1px solid #1c222c;font-size:13px}
+td:first-child{text-align:left;color:#c8d0dd}
+tbody tr:hover{background:#1b212b}
+.dot{display:inline-block;width:11px;height:11px;border-radius:50%;vertical-align:middle}
+.dot.on{background:#3ddc97;box-shadow:0 0 7px rgba(61,220,151,.6)}
+.dot.off{background:#2c3441}
+.dot.unk{background:#3a4250;border:1px dashed #4a5464}
+.flash{outline:1.5px solid #f5a623;outline-offset:-1.5px;border-radius:50%}
+tr.extra td:first-child{color:#4f596b}
+.legend{font-size:11.5px;color:#6b7688;margin-top:9px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:11px}
+.pcard{background:#1b212b;border:1px solid #262e3a;border-radius:9px;padding:11px 13px}
+.pcard .name{font-size:12px;color:#9aa4b8;margin-bottom:6px}
+.pcard .eq{font-size:23px;font-weight:600;font-variant-numeric:tabular-nums}
+.pcard .pnl{font-size:12.5px;margin-left:7px}
+.bar{height:5px;background:#242c38;border-radius:3px;margin:8px 0 5px;overflow:hidden}
+.bar i{display:block;height:100%;background:#4a9eff;border-radius:3px}
+.pcard .sm{display:flex;justify-content:space-between;font-size:11px;color:#6b7688;gap:6px}
+.buy{color:#3ddc97}.sell{color:#ff6b6b}.hold{color:#9aa4b8}
+.note{font-size:11.5px;color:#5c6678;margin-top:12px;line-height:1.7}
+.badge{display:inline-block;font-size:10.5px;padding:1px 6px;border-radius:8px;margin-left:6px;vertical-align:middle}
+.badge.p{background:#1d3a2e;color:#3ddc97}
+.badge.s{background:#33262a;color:#ff8b8b}
+.badge.n{background:#2a303c;color:#8b95a8}
+.sub{color:#8b95a8;font-size:12px;margin:-4px 0 11px;line-height:1.75}
+.sub b{color:#c8d0dd;font-weight:500}
+.howto{background:#12161d;border:1px dashed #2a323f;border-radius:9px;padding:12px 15px;margin-bottom:14px}
+.howto h3{margin:0 0 8px;font-size:13px;color:#c8d0dd;font-weight:600}
+.howto ol{margin:0;padding-left:19px;color:#8b95a8;font-size:12.5px;line-height:1.95}
+.howto ol b{color:#c8d0dd;font-weight:500}
+.terms td:first-child{color:#9fb0c8;font-weight:500;white-space:nowrap}
+.verdict{background:#12161d;border-left:3px solid #4a9eff;border-radius:0 8px 8px 0;padding:11px 15px;margin-bottom:14px}
+.verdict .t{font-size:11.5px;color:#6b7688;letter-spacing:.5px;margin-bottom:5px}
+.verdict .b{font-size:13.5px;color:#d4dbe6;line-height:1.8}
+.verdict .b b{color:#fff;font-weight:600}
+th[title]{cursor:help}
+th[title]:hover{color:#c8d0dd;text-decoration:underline dotted #4a5464}
+</style></head><body data-ncoins="8"><div class="wrap">
+<div class="top"><div>
+<h1>量化看盘台</h1>
+<div class="meta">生成于 2026-11-11 12:10:18 ｜ 行情日 <b>2026-11-10</b>（已收盘）｜ 信号更新 2026-11-11T09:48:33 ｜ 实时价取自交易所当前报价</div>
+</div><div class="kpis">
+<div class="kpi"><div class="v">73,796.1</div><div class="l" title="比特币最近一个<b>已收盘</b>日线的收盘价 —— 信号就是用它算的">BTC 收盘价<br>(2026-11-10)</div></div>
+<div class="kpi"><div class="v down">-1.00%</div><div class="l" title="比特币<b>此刻</b>的实时涨跌幅（最近24小时）。仅供盯盘参考，<b>不参与</b>信号计算">BTC 实时涨跌<br>(此刻)</div></div>
+<div class="kpi"><div class="v down">-4.72%</div><div class="l" title="比特币最近 7 天涨跌">BTC 7日</div></div>
+<div class="kpi"><div class="v down">-11.91%</div><div class="l" title="比特币最近 30 天涨跌">BTC 30日</div></div>
+<div class="kpi"><div class="v down">-0.07%</div><div class="l" title="所有策略当前收益的平均值">11 策略平均</div></div>
+<div class="kpi"><div class="v">4/11</div><div class="l" title="有多少策略现在手上拿着币（其余是空仓）">有仓策略</div></div>
+</div></div>
+<div class="verdict"><div class="t">一句话结论</div><div class="b"><b>11 个策略</b>里 <b>4 个</b>当前手上有币，平均收益 <b>-0.07%</b>。 暂时<b>没有任何策略触发预警</b>。 纸面盘才跑 <b>0 天</b>，满 30 天才够下结论 —— 现在看到的主要是<b>回测预期</b>，不是战绩。 所有策略横向比的是同一条线：<b>死扛（一直持有不卖）</b>在2024-12-31 之后赚了 <b>-21.8%</b>。 <b>此刻</b> BTC 24 小时涨跌 <b>-1.00%</b>（实时，仅参考；信号按 2026-11-10 收盘价算）。</div></div>
+<div class="howto"><h3>怎么看这个面板（3 步）</h3><ol><li><b>先看顶部「一句话结论」</b> —— 现在整体是什么状态、有没有需要你动手的地方。</li><li><b>再看你关心的那一行</b> —— ①信号矩阵看策略每天想持有哪些币；②纸面组合看每个策略实际赚了多少、仓位多少。</li><li><b>拿不准就看「⏱ 对比基准」和「⑤ 衰减监控」</b> —— 前者是所有策略的及格线，后者告诉你某个策略是不是开始失效了。</li></ol></div>
+<div class="card"><h2>📈 行情与基准 <span class="tag">公开脱敏版</span></h2>
+<div class="sub">这一页只放<b>公开信息</b>：币价行情、买入持有的基准线、名词解释。<b>策略明细、持仓、交易流水、每个策略的业绩都已移除</b>——策略一旦公开就会被别人抄，市场会自己把它做坏（公开后年化大幅回落是有实证的）。<br>完整面板（含策略）只在本机可见。</div>
+</div>
+<div class="card"><h2>当前状态 <span class="tag">只给汇总数，不给策略明细</span></h2>
+<div class="sub">下面是几个<b>汇总数字</b>：一共在跑几个策略、几个手上有币、整体平均多少、有没有需要处理的预警。<b>具体是哪些策略、参数怎么设、持有哪些币、每笔成交多少</b>——这些属于私有内容，不在这里公开。</div>
+<div class="kpis"><div class="kpi"><div class="v">11</div><div class="l">在跑的策略数</div></div><div class="kpi"><div class="v">4/11</div><div class="l">当前有仓的</div></div><div class="kpi"><div class="v down">-0.07%</div><div class="l">平均收益</div></div><div class="kpi"><div class="v">73,796.1</div><div class="l">BTC 收盘价<br>(2026-11-10)</div></div><div class="kpi"><div class="v down">-1.00%</div><div class="l">BTC 实时涨跌</div></div></div>
+</div>
+<div class="card"><h2>⏱ 对比基准：死扛（一直持有不卖）<span class="tag">所有策略横向比较都对这条线</span></h2>
+<div class="sub">「死扛」= 不看任何信号，把 8 个币等权买着一直不动，现金也按 4% 利息躺着。<b>它代表「不折腾能赚多少」</b>。任何一个策略的样本外收益比它高，才叫「这个策略有用」。</div>
+<div class="kpis"><div class="kpi"><div class="v down">-21.8%</div><div class="l">死扛 · 样本外收益<br>(2024-12-31 起)</div></div><div class="kpi"><div class="v down">-12.5%</div><div class="l">死扛 · 样本外年化</div></div><div class="kpi"><div class="v down">-61.9%</div><div class="l">死扛 · 样本外回撤</div></div><div class="kpi"><div class="v">3.48x</div><div class="l">死扛 · 全期终值</div></div><div class="kpi"><div class="v up">+24.8%</div><div class="l">死扛 · 全期年化</div></div></div>
+<div class="note"><b>怎么读</b>：样本外 = 回测时故意留出来、<b>没参与选策略</b>的那段行情，专门用来验真伪。<br><b>提醒</b>：死扛终值含训练期累积，<b>不能拿终值相除</b>当相对倍数；比较一律用<b>样本外收益</b>。</div></div>
+<div class="card"><h2>币价 <span class="tag">8 个币</span></h2>
+<div class="sub"><b>收盘价</b>＝最近一个已收盘日线；<b>实时价／今日涨跌</b>＝此刻的行情。（日线要等 UTC 23:59 收盘，所以收盘价天然比今天慢一天）</div>
+<table><thead><tr><th title="币种">币</th><th title="最近一个已收盘日线">收盘价</th><th title="此刻的实时价，仅供参考">实时价</th><th title="此刻相对24小时前的涨跌">今日涨跌</th><th title="最近 1 天涨跌">1日</th><th title="最近 7 天涨跌">7日</th><th title="最近 30 天涨跌">30日</th></tr></thead><tbody>
+<tr><td>BNB</td><td>680.6</td><td>683.4</td><td class="down">-0.86%</td><td class="down">-1.57%</td><td class="down">-2.52%</td><td class="down">-9.77%</td></tr>
+<tr><td>BTC</td><td>73,796.1</td><td>73,857.4</td><td class="down">-1.00%</td><td class="down">-2.09%</td><td class="down">-4.72%</td><td class="down">-11.91%</td></tr>
+<tr><td>OKB</td><td>96.98</td><td>96.7</td><td class="up">+0.13%</td><td class="up">+0.48%</td><td class="down">-10.08%</td><td class="down">-23.09%</td></tr>
+<tr><td>XRP</td><td>1.056</td><td>1.059</td><td class="down">-2.98%</td><td class="down">-3.86%</td><td class="down">-17.25%</td><td class="down">-25.09%</td></tr>
+<tr><td>SOL</td><td>83.35</td><td>83.36</td><td class="down">-2.99%</td><td class="down">-3.91%</td><td class="down">-10.21%</td><td class="down">-25.15%</td></tr>
+<tr><td>DOGE</td><td>0.06804</td><td>0.06848</td><td class="down">-1.58%</td><td class="down">-2.90%</td><td class="down">-9.53%</td><td class="down">-21.60%</td></tr>
+<tr><td>AVAX</td><td>8.376</td><td>8.447</td><td class="down">-1.09%</td><td class="down">-3.23%</td><td class="down">-1.67%</td><td class="down">-23.69%</td></tr>
+<tr><td>TRX</td><td>0.3178</td><td>0.3176</td><td class="down">-0.13%</td><td class="flat">+0.00%</td><td class="down">-1.21%</td><td class="down">-3.76%</td></tr>
+</tbody></table></div>
+<div class="card"><h2>名词解释 <span class="tag">看不懂的地方查这里</span></h2>
+<table class="terms"><thead><tr><th style="width:132px">名词</th><th style="text-align:left">大白话解释</th></tr></thead><tbody>
+<tr><td>死扛（对比基准）</td><td style="text-align:left">不看任何信号，一直持有 8 个币不动。这是「不折腾能赚多少」的及格线。</td></tr>
+<tr><td>样本外</td><td style="text-align:left">回测时故意留出来、<b>没参与选策略</b>的那段行情，专门用来验真伪。</td></tr>
+<tr><td>回测</td><td style="text-align:left">用历史行情模拟跑一遍某个策略，看它历史上赚不赚。</td></tr>
+<tr><td>回测预期年化</td><td style="text-align:left">回测算出来「这个策略应该一年赚多少」。是预期，不是承诺。</td></tr>
+<tr><td>实际年化</td><td style="text-align:left">纸面盘最近 60 个交易日的真实表现换算成年化。</td></tr>
+<tr><td>差多少</td><td style="text-align:left">实际年化 减去 回测预期年化，单位百分点。负数 = 比预期差。</td></tr>
+<tr><td>回撤</td><td style="text-align:left">从最高点跌下来的幅度，最惨时亏了多少。数字越负越惨。</td></tr>
+<tr><td>年化</td><td style="text-align:left">把一段时间的收益换算成「一年赚多少」，方便不同时间段比较。</td></tr>
+<tr><td>等权 1/8</td><td style="text-align:left">8 个币每个占 1/8 仓位，不多不少。</td></tr>
+<tr><td>留现金</td><td style="text-align:left">这个币没信号时，那份钱不买入，按 4% 利息躺着。</td></tr>
+<tr><td>滑点 0.3%</td><td style="text-align:left">实际成交价比看到的价格差 0.3%（买卖都要算）。摩擦成本。</td></tr>
+<tr><td>T+1</td><td style="text-align:left">今天收盘看到信号，明天才成交。防止用当天涨跌作弊。</td></tr>
+<tr><td>信号</td><td style="text-align:left">策略根据行情算出来的「现在该买/该卖」的意思。</td></tr>
+<tr><td>纸面盘</td><td style="text-align:left">用真行情、真价格规则模拟交易，<b>不花真钱</b>。</td></tr>
+<tr><td>准入闸门</td><td style="text-align:left">新策略想进纸面盘必须过的 5 道关：样本外收益 > 2%、回撤 > −45%、5 个时间切分里 ≥3 个为正、滑点加到 0.5% 仍为正、同族去重。</td></tr>
+<tr><td>同族去重</td><td style="text-align:left">同一个指标家族只留最好的一个，避免 10 个「换皮」的策略挤在一起。</td></tr>
+<tr><td>时间切分</td><td style="text-align:left">把样本外那段再切成 5 段分别算，看是不是只有一段运气好。</td></tr>
+<tr><td>衰减</td><td style="text-align:left">策略用的人越多、越公开，效果越差。</td></tr>
+</tbody></table></div>
+<div class="note" style="margin-top:4px">口径：收盘价＝最近一个已收盘日线；实时价＝此刻报价，仅供参考。｜公开脱敏版 · 不含任何策略参数、持仓或交易明细。</div></div>
+</div>
+<script>
+// 交互：点击币列头可切换「仅纸面8币 / 全部12币」；点击策略行可折叠
+function toggleCoins(){
+  const b=document.getElementById('coinToggle');
+  const extra=document.querySelectorAll('tr.extra');
+  const hide=b.dataset.mode==='all';
+  extra.forEach(r=>r.style.display=hide?'':'none');
+  b.dataset.mode=hide?'paper':'all';
+  b.textContent=hide?'显示全部 '+document.body.dataset.ncoins+' 币':'只看纸面 8 币';
+}
+function flash(el){el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),2200);}
+document.querySelectorAll('.cell[data-chg="1"]').forEach(flash);
+</script></body></html>
