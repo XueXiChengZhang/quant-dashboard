@@ -49,6 +49,38 @@ tr.extra td:first-child{color:#4f596b}
 .howto ol{margin:0;padding-left:19px;color:#8b95a8;font-size:12.5px;line-height:1.95}
 .howto ol b{color:#c8d0dd;font-weight:500}
 .terms td:first-child{color:#9fb0c8;font-weight:500;white-space:nowrap}
+
+.rel{font-size:11px;padding:1px 6px;border-radius:8px;margin-left:6px;vertical-align:middle;white-space:nowrap}
+.rel.up{background:#1d3a2e;color:#3ddc97}
+.rel.down{background:#33262a;color:#ff8b8b}
+.rel.flat{background:#2a303c;color:#8b95a8}
+.hint{font-size:11px;color:#5c6678;margin-top:4px;line-height:1.55}
+/* ★ 手机端防横向溢出: 用「卡片内横向滚动」, 而不是给表格套一层 div。
+   套 div 会和源码里 '</tbody></table></div>' 打架 —— 那个 </div> 闭的是**卡片**,
+   被当成表格的闭合就会把卡片闭标签弄丢, 整页 div 结构塌。CSS 方案零结构风险。 */
+.card{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.card table{min-width:520px}
+.card table.terms{min-width:0}
+tbody tr.tot td{font-weight:600;color:#e8edf5;border-top:1px solid #2f3846;background:#151a22}
+@media (max-width:760px){
+  .wrap{padding:10px}
+  h1{font-size:19px}
+  .card{padding:11px 12px;margin-bottom:10px}
+  .kpis{gap:12px}
+  .kpi .v{font-size:17px}
+  .kpi .l{font-size:10.5px}
+  .pgrid{grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:8px}
+  .pcard{padding:9px 10px}
+  .pcard .eq{font-size:19px}
+  .pcard .sm{font-size:10px}
+  table{font-size:11.5px}
+  th,td{padding:4px 5px}
+  th{font-size:10.5px}
+  .sub{font-size:11.5px}
+  .verdict .b{font-size:12.5px}
+  .howto ol{font-size:11.5px}
+  .terms td:first-child{white-space:normal}
+}
 .verdict{background:#12161d;border-left:3px solid #4a9eff;border-radius:0 8px 8px 0;padding:11px 15px;margin-bottom:14px}
 .verdict .t{font-size:11.5px;color:#6b7688;letter-spacing:.5px;margin-bottom:5px}
 .verdict .b{font-size:13.5px;color:#d4dbe6;line-height:1.8}
@@ -58,39 +90,211 @@ th[title]:hover{color:#c8d0dd;text-decoration:underline dotted #4a5464}
 </style></head><body data-ncoins="8"><div class="wrap">
 <div class="top"><div>
 <h1>量化看盘台</h1>
-<div class="meta">生成于 2026-11-11 12:30:05 ｜ 行情日 <b>2026-11-10</b>（已收盘）｜ 信号更新 2026-11-11T09:48:33 ｜ 实时价取自交易所当前报价</div>
+<div class="meta">生成于 2026-11-12 14:59:07 ｜ 行情日 <b>2026-11-11</b>（已收盘）｜ 信号更新 2026-11-12T09:05:59 ｜ 实时价取自交易所当前报价</div>
 </div><div class="kpis">
-<div class="kpi"><div class="v">73,796.1</div><div class="l" title="比特币最近一个<b>已收盘</b>日线的收盘价 —— 信号就是用它算的">BTC 收盘价<br>(2026-11-10)</div></div>
-<div class="kpi"><div class="v down">-1.53%</div><div class="l" title="比特币<b>此刻</b>的实时涨跌幅（最近24小时）。仅供盯盘参考，<b>不参与</b>信号计算">BTC 实时涨跌<br>(此刻)</div></div>
-<div class="kpi"><div class="v down">-4.72%</div><div class="l" title="比特币最近 7 天涨跌">BTC 7日</div></div>
-<div class="kpi"><div class="v down">-11.91%</div><div class="l" title="比特币最近 30 天涨跌">BTC 30日</div></div>
-<div class="kpi"><div class="v down">-0.07%</div><div class="l" title="所有策略当前收益的平均值">11 策略平均</div></div>
+<div class="kpi"><div class="v">74,015.2</div><div class="l" title="比特币最近一个已收盘日线的收盘价 —— 信号就是用它算的">BTC 收盘价<br>(2026-11-11)</div></div>
+<div class="kpi"><div class="v down">-0.11%</div><div class="l" title="比特币此刻的实时涨跌幅（最近24小时）。仅供盯盘参考，不参与信号计算">BTC 实时涨跌<br>(此刻)</div></div>
+<div class="kpi"><div class="v down">-8.06%</div><div class="l" title="比特币最近 7 天涨跌">BTC 7日</div></div>
+<div class="kpi"><div class="v down">-9.57%</div><div class="l" title="比特币最近 30 天涨跌">BTC 30日</div></div>
+<div class="kpi"><div class="v down">-0.03%</div><div class="l" title="所有策略当前收益的平均值">11 策略平均</div></div>
 <div class="kpi"><div class="v">4/11</div><div class="l" title="有多少策略现在手上拿着币（其余是空仓）">有仓策略</div></div>
 </div></div>
-<div class="verdict"><div class="t">一句话结论</div><div class="b"><b>11 个策略</b>里 <b>4 个</b>当前手上有币，平均收益 <b>-0.07%</b>。 暂时<b>没有任何策略触发预警</b>。 纸面盘才跑 <b>0 天</b>，满 30 天才够下结论 —— 现在看到的主要是<b>回测预期</b>，不是战绩。 所有策略横向比的是同一条线：<b>死扛（一直持有不卖）</b>在2024-12-31 之后赚了 <b>-21.8%</b>。 <b>此刻</b> BTC 24 小时涨跌 <b>-1.53%</b>（实时，仅参考；信号按 2026-11-10 收盘价算）。</div></div>
-<div class="card"><h2>📈 行情与基准 <span class="tag">公开脱敏版</span></h2>
-<div class="sub">这一页只放<b>公开信息</b>：币价行情、买入持有的基准线、名词解释。<b>策略明细、持仓、交易流水、每个策略的业绩都已移除</b>——策略一旦公开就会被别人抄，市场会自己把它做坏（公开后年化大幅回落是有实证的）。<br>完整面板（含策略）只在本机可见。</div>
-</div>
-<div class="card"><h2>当前状态 <span class="tag">只给汇总数，不给策略明细</span></h2>
-<div class="sub">下面是几个<b>汇总数字</b>：一共在跑几个策略、几个手上有币、整体平均多少、有没有需要处理的预警。<b>具体是哪些策略、参数怎么设、持有哪些币、每笔成交多少</b>——这些属于私有内容，不在这里公开。</div>
-<div class="kpis"><div class="kpi"><div class="v">11</div><div class="l">在跑的策略数</div></div><div class="kpi"><div class="v">4/11</div><div class="l">当前有仓的</div></div><div class="kpi"><div class="v down">-0.07%</div><div class="l">平均收益</div></div><div class="kpi"><div class="v">73,796.1</div><div class="l">BTC 收盘价<br>(2026-11-10)</div></div><div class="kpi"><div class="v down">-1.53%</div><div class="l">BTC 实时涨跌</div></div></div>
-</div>
+<div class="verdict"><div class="t">一句话结论</div><div class="b"><b>11 个策略</b>里 <b>4 个</b>当前手上有币，平均收益 <b>-0.03%</b>。 暂时<b>没有任何策略触发预警</b>。 纸面盘才跑 <b>7 天</b>，满 30 天才够下结论 —— 现在看到的主要是<b>回测预期</b>，不是战绩。 所有策略横向比的是同一条线：<b>死扛（一直持有不卖）</b>在2024-12-31 之后赚了 <b>-21.8%</b>。 <b>此刻</b> BTC 24 小时涨跌 <b>-0.11%</b>（实时，仅参考；信号按 2026-11-11 收盘价算）。</div></div>
+<div class="howto"><h3>怎么看这个面板（3 步）</h3><ol><li><b>先看顶部「一句话结论」</b> —— 现在整体是什么状态、有没有需要你动手的地方。</li><li><b>再看你关心的那一行</b> —— ①①信号矩阵看策略每天想持有哪些币；③纸面组合看每个策略实际赚了多少、仓位多少。</li><li><b>拿不准就看「⏱ 对比基准」和「⑥ 衰减监控」</b> —— 前者是所有策略的及格线，后者告诉你某个策略是不是开始失效了。</li></ol></div>
 <div class="card"><h2>⏱ 对比基准：死扛（一直持有不卖）<span class="tag">所有策略横向比较都对这条线</span></h2>
 <div class="sub">「死扛」= 不看任何信号，把 8 个币等权买着一直不动，现金也按 4% 利息躺着。<b>它代表「不折腾能赚多少」</b>。任何一个策略的样本外收益比它高，才叫「这个策略有用」。</div>
 <div class="kpis"><div class="kpi"><div class="v down">-21.8%</div><div class="l">死扛 · 样本外收益<br>(2024-12-31 起)</div></div><div class="kpi"><div class="v down">-12.5%</div><div class="l">死扛 · 样本外年化</div></div><div class="kpi"><div class="v down">-61.9%</div><div class="l">死扛 · 样本外回撤</div></div><div class="kpi"><div class="v">3.48x</div><div class="l">死扛 · 全期终值</div></div><div class="kpi"><div class="v up">+24.8%</div><div class="l">死扛 · 全期年化</div></div></div>
-<div class="note"><b>怎么读</b>：样本外 = 回测时故意留出来、<b>没参与选策略</b>的那段行情，专门用来验真伪。<br><b>提醒</b>：死扛终值含训练期累积，<b>不能拿终值相除</b>当相对倍数；比较一律用<b>样本外收益</b>。</div></div>
-<div class="card"><h2>币价 <span class="tag">8 个币</span></h2>
-<div class="sub"><b>收盘价</b>＝最近一个已收盘日线；<b>实时价／今日涨跌</b>＝此刻的行情。（日线要等 UTC 23:59 收盘，所以收盘价天然比今天慢一天）</div>
-<table><thead><tr><th title="币种">币</th><th title="最近一个已收盘日线">收盘价</th><th title="此刻的实时价，仅供参考">实时价</th><th title="此刻相对24小时前的涨跌">今日涨跌</th><th title="最近 1 天涨跌">1日</th><th title="最近 7 天涨跌">7日</th><th title="最近 30 天涨跌">30日</th></tr></thead><tbody>
-<tr><td>BNB</td><td>680.6</td><td>681</td><td class="down">-1.41%</td><td class="down">-1.57%</td><td class="down">-2.52%</td><td class="down">-9.77%</td></tr>
-<tr><td>BTC</td><td>73,796.1</td><td>73,682.6</td><td class="down">-1.53%</td><td class="down">-2.09%</td><td class="down">-4.72%</td><td class="down">-11.91%</td></tr>
-<tr><td>OKB</td><td>96.98</td><td>96.36</td><td class="down">-0.46%</td><td class="up">+0.48%</td><td class="down">-10.08%</td><td class="down">-23.09%</td></tr>
-<tr><td>XRP</td><td>1.056</td><td>1.055</td><td class="down">-3.92%</td><td class="down">-3.86%</td><td class="down">-17.25%</td><td class="down">-25.09%</td></tr>
-<tr><td>SOL</td><td>83.35</td><td>83.03</td><td class="down">-3.70%</td><td class="down">-3.91%</td><td class="down">-10.21%</td><td class="down">-25.15%</td></tr>
-<tr><td>DOGE</td><td>0.06804</td><td>0.06833</td><td class="down">-2.08%</td><td class="down">-2.90%</td><td class="down">-9.53%</td><td class="down">-21.60%</td></tr>
-<tr><td>AVAX</td><td>8.376</td><td>8.449</td><td class="down">-1.46%</td><td class="down">-3.23%</td><td class="down">-1.67%</td><td class="down">-23.69%</td></tr>
-<tr><td>TRX</td><td>0.3178</td><td>0.3176</td><td class="flat">+0.00%</td><td class="flat">+0.00%</td><td class="down">-1.21%</td><td class="down">-3.76%</td></tr>
+<div class="note"><b>怎么读</b>：① <b>横向</b>——策略之间比，全部对齐这条死扛线：样本外收益比它高 = 赢，比它低 = 不如死扛。② <b>纵向</b>——策略跟自己比，看⑥衰减监控里每条策略自己的「回测基线」。<br><b>两个提醒</b>：（1）「样本外」= 回测里刻意留出来、<b>没参与选策略</b>的那段行情，专门用来验真伪。（2）死扛终值含训练期累积，<b>不能拿终值相除</b>当相对倍数（曾把 4.04x 写成 108.77x，已修）；比较一律用<b>样本外收益</b>。</div></div>
+<div class="card"><h2>① 信号矩阵 <span class="tag">12 个策略 × 8 个币（与纸面盘同源）</span></h2>
+<div class="sub">每行一个策略、每列一个币。<b>绿点</b>=这个策略现在说「持有这个币」；<b>灰点</b>=说「空仓观望」；<b>橙圈</b>=今天刚刚改变主意。这一块只回答「策略今天想要什么」，<b>不代表真买了</b>——实际成交看②。</div>
+<table><thead><tr><th title="策略名称。同一行 = 同一个交易规则">策略</th>
+<th class="" title="BNBUSDT">BNB</th>
+<th class="" title="BTCUSDT">BTC</th>
+<th class="" title="OKBUSDT">OKB</th>
+<th class="" title="XRPUSDT">XRP</th>
+<th class="" title="SOLUSDT">SOL</th>
+<th class="" title="DOGEUSDT">DOGE</th>
+<th class="" title="AVAXUSDT">AVAX</th>
+<th class="" title="TRXUSDT">TRX</th>
+<th title="这一行里，8 个币中有几个当前有买入信号">有信号币数</th><th title="这个策略在纸面盘里的运行情况">状态</th></tr></thead><tbody>
+<tr><td>日线 ATR×1.0</td><td class="" title="BNBUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="BTCUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="OKBUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="XRPUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="SOLUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="DOGEUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="AVAXUSDT：持有"><span class="dot on" data-chg=""></span></td><td class="" title="TRXUSDT：持有"><span class="dot on" data-chg=""></span></td><td>2</td><td><span class="badge p">运行中 +0.03%</span></td></tr>
+<tr><td>日线 MACD26/52/9</td><td class="" title="BNBUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="BTCUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="OKBUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="XRPUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="SOLUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="DOGEUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="AVAXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="TRXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td>0</td><td><span class="badge p">运行中 +0.14%</span></td></tr>
+<tr><td>周线 MACD5/10/5</td><td class="" title="BNBUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="BTCUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="OKBUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="XRPUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="SOLUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="DOGEUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="AVAXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="TRXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td>0</td><td><span class="badge p">运行中 +0.14%</span></td></tr>
+<tr><td>周线 MA2/6</td><td class="" title="BNBUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="BTCUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="OKBUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="XRPUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="SOLUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="DOGEUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="AVAXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="TRXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td>0</td><td><span class="badge p">运行中 +0.14%</span></td></tr>
+<tr><td>日线 ATR×1.5</td><td class="" title="BNBUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="BTCUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="OKBUSDT：持有"><span class="dot on" data-chg=""></span></td><td class="" title="XRPUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="SOLUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="DOGEUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="AVAXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="TRXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td>1</td><td><span class="badge p">运行中 -0.99%</span></td></tr>
+<tr><td>CCI9>100（w·新）</td><td class="" title="BNBUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="BTCUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="OKBUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="XRPUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="SOLUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="DOGEUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="AVAXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="TRXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td>0</td><td><span class="badge p">运行中 +0.06%</span></td></tr>
+<tr><td>随机%K14>70（w·新）</td><td class="" title="BNBUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="BTCUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="OKBUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="XRPUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="SOLUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="DOGEUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="AVAXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="TRXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td>0</td><td><span class="badge p">运行中 +0.06%</span></td></tr>
+<tr><td>ROC10>20%（w·新）</td><td class="" title="BNBUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="BTCUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="OKBUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="XRPUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="SOLUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="DOGEUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="AVAXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="TRXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td>0</td><td><span class="badge p">运行中 +0.06%</span></td></tr>
+<tr><td>吊灯22x2.0（w·新）</td><td class="" title="BNBUSDT：持有"><span class="dot on" data-chg=""></span></td><td class="" title="BTCUSDT：持有"><span class="dot on" data-chg=""></span></td><td class="" title="OKBUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="XRPUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="SOLUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="DOGEUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="AVAXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="TRXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td>2</td><td><span class="badge p">运行中 -0.05%</span></td></tr>
+<tr><td>量比5>1.5（w·新）</td><td class="" title="BNBUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="BTCUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="OKBUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="XRPUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="SOLUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="DOGEUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="AVAXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="TRXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td>0</td><td><span class="badge p">运行中 +0.03%</span></td></tr>
+<tr><td>流动性5/20>30%（w·新）</td><td class="" title="BNBUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="BTCUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="OKBUSDT：持有"><span class="dot on" data-chg=""></span></td><td class="" title="XRPUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="SOLUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="DOGEUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="AVAXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="TRXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td>1</td><td><span class="badge p">运行中 +0.09%</span></td></tr>
+<tr><td>日线 MA200</td><td class="" title="BNBUSDT：持有"><span class="dot on" data-chg=""></span></td><td class="" title="BTCUSDT：持有"><span class="dot on" data-chg=""></span></td><td class="" title="OKBUSDT：持有"><span class="dot on" data-chg=""></span></td><td class="" title="XRPUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="SOLUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="DOGEUSDT：空仓"><span class="dot off" data-chg=""></span></td><td class="" title="AVAXUSDT：持有"><span class="dot on" data-chg=""></span></td><td class="" title="TRXUSDT：空仓"><span class="dot off" data-chg=""></span></td><td>4</td><td><span class="badge n">基准线</span></td></tr>
+<tr class="tot"><td>多少策略想要它</td><td class="flat" style="font-weight:600">2</td><td class="flat" style="font-weight:600">2</td><td class="up" style="font-weight:600">3</td><td class="down" style="font-weight:600">0</td><td class="down" style="font-weight:600">0</td><td class="down" style="font-weight:600">0</td><td class="flat" style="font-weight:600">2</td><td class="flat" style="font-weight:600">1</td><td>—</td><td>共识度</td></tr>
 </tbody></table></div>
+<div class="legend"><span><span class="dot on"></span> 有信号（想持有）</span><span><span class="dot off"></span> 无信号（空仓）</span><span><span class="dot unk"></span> 无数据</span><span><span class="dot on flash"></span> 今日翻转</span><button id="coinToggle" data-mode="paper" onclick="toggleCoins()" style="background:#232a36;color:#9aa4b8;border:1px solid #2f3846;border-radius:6px;padding:3px 10px;font-size:11.5px;cursor:pointer">显示全部 8 币</button></div></div>
+<div class="card"><h2>② 策略规则速查 <span class="tag">每个策略到底在干什么 + 现在怎么想</span></h2>
+<div class="sub">左边是<b>交易规则的中文说明</b>（不写代码也能看懂），中间是<b>参数</b>，右边是<b>当前状态</b>：8 个币里有几个想买、实际持有哪些、以及跑赢「死扛基准」多少。<b>按跑赢基准排序</b>，最上面就是当前最强的。</div>
+<table><thead><tr><th title="策略名称">策略</th><th title="用中文说清楚这个策略的交易规则">交易规则</th><th title="规则里的参数">参数</th><th title="周期：日线还是周线">周期</th><th title="8 个币里有几个当前有买入信号">信号</th><th title="当前实际持有的币">持有</th><th title="相对死扛基准（一直持有不卖）的超额">vs 死扛</th></tr></thead><tbody>
+<tr><td>日线 MACD26/52/9</td><td class="rule" style="text-align:left">日线MACD(26,52,9) 金叉 → <b>持有</b>；死叉 → <b>空仓</b></td><td class="flat" style="font-size:11.5px">26/52/9</td><td class="flat"></td><td><b>0</b>/8</td><td class="flat" style="text-align:left;font-size:12px">空仓</td><td><span class="rel up">+4.411%</span></td></tr>
+<tr><td>周线 MACD5/10/5</td><td class="rule" style="text-align:left">周线MACD(5,10,5) 金叉 → <b>持有</b>；死叉 → <b>空仓</b></td><td class="flat" style="font-size:11.5px">5/10/5</td><td class="flat"></td><td><b>0</b>/8</td><td class="flat" style="text-align:left;font-size:12px">空仓</td><td><span class="rel up">+4.411%</span></td></tr>
+<tr><td>周线 MA2/6</td><td class="rule" style="text-align:left">周线MA2 上穿 MA6 → <b>持有</b>；下穿 → <b>空仓</b></td><td class="flat" style="font-size:11.5px">2/6</td><td class="flat"></td><td><b>0</b>/8</td><td class="flat" style="text-align:left;font-size:12px">空仓</td><td><span class="rel up">+4.411%</span></td></tr>
+<tr><td>流动性5/20>30%（w·新）</td><td class="rule" style="text-align:left">周线近 5 日均成交额 / 近 20 日均成交额 大于 30% → <b>持有</b></td><td class="flat" style="font-size:11.5px">5/20, 30%</td><td class="flat"></td><td><b>1</b>/8</td><td class="flat" style="text-align:left;font-size:12px">OKB</td><td><span class="rel up">+4.360%</span></td></tr>
+<tr><td>CCI9>100（w·新）</td><td class="rule" style="text-align:left">周线CCI(9) 大于 100 → <b>持有</b>；否则空仓</td><td class="flat" style="font-size:11.5px">9, 100</td><td class="flat"></td><td><b>0</b>/8</td><td class="flat" style="text-align:left;font-size:12px">空仓</td><td><span class="rel up">+4.332%</span></td></tr>
+<tr><td>随机%K14>70（w·新）</td><td class="rule" style="text-align:left">周线随机%K(14) 大于 70 → <b>持有</b>；否则空仓</td><td class="flat" style="font-size:11.5px">14, 70</td><td class="flat"></td><td><b>0</b>/8</td><td class="flat" style="text-align:left;font-size:12px">空仓</td><td><span class="rel up">+4.332%</span></td></tr>
+<tr><td>ROC10>20%（w·新）</td><td class="rule" style="text-align:left">周线10 日涨幅大于 20% → <b>持有</b>；否则空仓</td><td class="flat" style="font-size:11.5px">10, 20%</td><td class="flat"></td><td><b>0</b>/8</td><td class="flat" style="text-align:left;font-size:12px">空仓</td><td><span class="rel up">+4.332%</span></td></tr>
+<tr><td>量比5>1.5（w·新）</td><td class="rule" style="text-align:left">周线成交量 / 5 日均量 大于 1.5 → <b>持有</b>（放量确认）</td><td class="flat" style="font-size:11.5px">5, x1.5</td><td class="flat"></td><td><b>0</b>/8</td><td class="flat" style="text-align:left;font-size:12px">空仓</td><td><span class="rel up">+4.299%</span></td></tr>
+<tr><td>日线 ATR×1.0</td><td class="rule" style="text-align:left">日线收盘价创 14 日新高 → <b>持有</b>；创 14 日新低 → <b>空仓</b></td><td class="flat" style="font-size:11.5px">ATR 14, x1.0</td><td class="flat"></td><td><b>2</b>/8</td><td class="flat" style="text-align:left;font-size:12px">AVAX、TRX</td><td><span class="rel up">+4.297%</span></td></tr>
+<tr><td>吊灯22x2.0（w·新）</td><td class="rule" style="text-align:left">周线吊灯止损：22 日最高 减 2.0xATR → <b>持有</b>；否则空仓</td><td class="flat" style="font-size:11.5px">22, 2.0</td><td class="flat"></td><td><b>2</b>/8</td><td class="flat" style="text-align:left;font-size:12px">BNB、BTC</td><td><span class="rel up">+4.212%</span></td></tr>
+<tr><td>日线 ATR×1.5</td><td class="rule" style="text-align:left">日线收盘价创 14 日新高 → <b>持有</b>；创 14 日新低 → <b>空仓</b></td><td class="flat" style="font-size:11.5px">ATR 14, x1.5</td><td class="flat"></td><td><b>1</b>/8</td><td class="flat" style="text-align:left;font-size:12px">OKB</td><td><span class="rel up">+3.227%</span></td></tr>
+</tbody></table></div>
+<div class="note"><b>怎么读这一页</b>：<b>信号</b>列是「现在想持有几个币」，<b>持有</b>列是「实际拿着哪些」（信号当天确认、次日成交，所以两者会差一天）。<b>vs 死扛</b>是策略净值 ÷ 死扛基准净值 − 1，正数说明这套规则比「什么都不做」强。</div></div>
+<div class="card"><h2>③ 纸面组合 <span class="tag">11 个策略 · 每个策略独立 1000 USDT</span></h2>
+<div class="sub">每个策略拿 <b>1000 USDT 独立跑</b>，互不影响、互不抢钱。<b>净值</b>=现在值多少钱（1000 起点）；<b>仓位</b>=多少在币上、多少在现金；<b>信号</b>=8 个币里有几个想买。<b>这是模拟盘，不是真钱。</b></div>
+<div class="pgrid">
+<div class="pcard">
+<div class="name" title="日线 MACD26/52/9">日线 MACD26/52/9<span class="rel up" title="相对『死扛基准』的超额: 策略净值 ÷ 基准净值 − 1。正数 = 跑赢了不折腾的基准">vs基准 +4.411%</span></div>
+<div title="当前净值（本金 1000 USDT）"><span class="eq">1,001.40</span><span class="pnl up">+0.14%</span></div>
+<div class="bar" title="仓位：蓝色条=在币上的比例，剩余=现金"><i style="width:0.0%"></i></div>
+<div class="sm"><span title="多少比例的资金在币上">仓位 0.0%</span><span title="还没投出去的钱（按 4% 利息躺着）">现金 1,001</span></div>
+<div class="sm" style="margin-top:3px"><span title="8 个币里有几个当前有买入信号">信号 0/8</span><span title="累计成交笔数">交易 0 笔</span></div>
+<div class="sm" style="margin-top:3px"><span title="当前实际持有的币">持有 空仓</span><span title="蓝线 = 策略净值　灰虚线 = 死扛基准（一直持有不卖）"><svg width="150" height="30" style="vertical-align:middle"><line x1="0" y1="3.7" x2="150" y2="3.7" stroke="#39424f" stroke-width="1" stroke-dasharray="3,3"/><polyline points="0.0,3.7 25.0,2.0 50.0,6.4 75.0,21.1 100.0,16.0 125.0,28.0 150.0,27.2" fill="none" stroke="#7c8798" stroke-width="1.1" stroke-dasharray="3,2" opacity=".85"/><polyline points="0.0,3.6 25.0,3.5 50.0,3.4 75.0,3.4 100.0,3.2 125.0,2.9 150.0,2.9" fill="none" stroke="#3ddc97" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg></span></div>
+<div class="hint" title="日线MACD(26,52,9) 金叉 → 持有；死叉 → 空仓">日线MACD(26,52,9) 金叉 → <b>持有</b>；死叉 → <b>空仓</b></div>
+</div>
+<div class="pcard">
+<div class="name" title="周线 MACD5/10/5">周线 MACD5/10/5<span class="rel up" title="相对『死扛基准』的超额: 策略净值 ÷ 基准净值 − 1。正数 = 跑赢了不折腾的基准">vs基准 +4.411%</span></div>
+<div title="当前净值（本金 1000 USDT）"><span class="eq">1,001.40</span><span class="pnl up">+0.14%</span></div>
+<div class="bar" title="仓位：蓝色条=在币上的比例，剩余=现金"><i style="width:0.0%"></i></div>
+<div class="sm"><span title="多少比例的资金在币上">仓位 0.0%</span><span title="还没投出去的钱（按 4% 利息躺着）">现金 1,001</span></div>
+<div class="sm" style="margin-top:3px"><span title="8 个币里有几个当前有买入信号">信号 0/8</span><span title="累计成交笔数">交易 0 笔</span></div>
+<div class="sm" style="margin-top:3px"><span title="当前实际持有的币">持有 空仓</span><span title="蓝线 = 策略净值　灰虚线 = 死扛基准（一直持有不卖）"><svg width="150" height="30" style="vertical-align:middle"><line x1="0" y1="3.7" x2="150" y2="3.7" stroke="#39424f" stroke-width="1" stroke-dasharray="3,3"/><polyline points="0.0,3.7 25.0,2.0 50.0,6.4 75.0,21.1 100.0,16.0 125.0,28.0 150.0,27.2" fill="none" stroke="#7c8798" stroke-width="1.1" stroke-dasharray="3,2" opacity=".85"/><polyline points="0.0,3.6 25.0,3.5 50.0,3.4 75.0,3.4 100.0,3.2 125.0,2.9 150.0,2.9" fill="none" stroke="#3ddc97" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg></span></div>
+<div class="hint" title="周线MACD(5,10,5) 金叉 → 持有；死叉 → 空仓">周线MACD(5,10,5) 金叉 → <b>持有</b>；死叉 → <b>空仓</b></div>
+</div>
+<div class="pcard">
+<div class="name" title="周线 MA2/6">周线 MA2/6<span class="rel up" title="相对『死扛基准』的超额: 策略净值 ÷ 基准净值 − 1。正数 = 跑赢了不折腾的基准">vs基准 +4.411%</span></div>
+<div title="当前净值（本金 1000 USDT）"><span class="eq">1,001.40</span><span class="pnl up">+0.14%</span></div>
+<div class="bar" title="仓位：蓝色条=在币上的比例，剩余=现金"><i style="width:0.0%"></i></div>
+<div class="sm"><span title="多少比例的资金在币上">仓位 0.0%</span><span title="还没投出去的钱（按 4% 利息躺着）">现金 1,001</span></div>
+<div class="sm" style="margin-top:3px"><span title="8 个币里有几个当前有买入信号">信号 0/8</span><span title="累计成交笔数">交易 0 笔</span></div>
+<div class="sm" style="margin-top:3px"><span title="当前实际持有的币">持有 空仓</span><span title="蓝线 = 策略净值　灰虚线 = 死扛基准（一直持有不卖）"><svg width="150" height="30" style="vertical-align:middle"><line x1="0" y1="3.7" x2="150" y2="3.7" stroke="#39424f" stroke-width="1" stroke-dasharray="3,3"/><polyline points="0.0,3.7 25.0,2.0 50.0,6.4 75.0,21.1 100.0,16.0 125.0,28.0 150.0,27.2" fill="none" stroke="#7c8798" stroke-width="1.1" stroke-dasharray="3,2" opacity=".85"/><polyline points="0.0,3.6 25.0,3.5 50.0,3.4 75.0,3.4 100.0,3.2 125.0,2.9 150.0,2.9" fill="none" stroke="#3ddc97" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg></span></div>
+<div class="hint" title="周线MA2 上穿 MA6 → 持有；下穿 → 空仓">周线MA2 上穿 MA6 → <b>持有</b>；下穿 → <b>空仓</b></div>
+</div>
+<div class="pcard">
+<div class="name" title="流动性5/20>30%（w·新）">流动性5/20>30%（w·新）<span class="rel up" title="相对『死扛基准』的超额: 策略净值 ÷ 基准净值 − 1。正数 = 跑赢了不折腾的基准">vs基准 +4.360%</span></div>
+<div title="当前净值（本金 1000 USDT）"><span class="eq">1,000.91</span><span class="pnl up">+0.09%</span></div>
+<div class="bar" title="仓位：蓝色条=在币上的比例，剩余=现金"><i style="width:12.6%"></i></div>
+<div class="sm"><span title="多少比例的资金在币上">仓位 12.6%</span><span title="还没投出去的钱（按 4% 利息躺着）">现金 875</span></div>
+<div class="sm" style="margin-top:3px"><span title="8 个币里有几个当前有买入信号">信号 1/8</span><span title="累计成交笔数">交易 1 笔</span></div>
+<div class="sm" style="margin-top:3px"><span title="当前实际持有的币">持有 OKB</span><span title="蓝线 = 策略净值　灰虚线 = 死扛基准（一直持有不卖）"><svg width="150" height="30" style="vertical-align:middle"><line x1="0" y1="2.5" x2="150" y2="2.5" stroke="#39424f" stroke-width="1" stroke-dasharray="3,3"/><polyline points="0.0,28.0 150.0,27.1" fill="none" stroke="#7c8798" stroke-width="1.1" stroke-dasharray="3,2" opacity=".85"/><polyline points="0.0,2.7 150.0,2.0" fill="none" stroke="#3ddc97" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg></span></div>
+<div class="hint" title="周线近 5 日均成交额 / 近 20 日均成交额 大于 30% → 持有">周线近 5 日均成交额 / 近 20 日均成交额 大于 30% → <b>持有</b></div>
+</div>
+<div class="pcard">
+<div class="name" title="CCI9>100（w·新）">CCI9>100（w·新）<span class="rel up" title="相对『死扛基准』的超额: 策略净值 ÷ 基准净值 − 1。正数 = 跑赢了不折腾的基准">vs基准 +4.332%</span></div>
+<div title="当前净值（本金 1000 USDT）"><span class="eq">1,000.64</span><span class="pnl up">+0.06%</span></div>
+<div class="bar" title="仓位：蓝色条=在币上的比例，剩余=现金"><i style="width:0.0%"></i></div>
+<div class="sm"><span title="多少比例的资金在币上">仓位 0.0%</span><span title="还没投出去的钱（按 4% 利息躺着）">现金 1,001</span></div>
+<div class="sm" style="margin-top:3px"><span title="8 个币里有几个当前有买入信号">信号 0/8</span><span title="累计成交笔数">交易 0 笔</span></div>
+<div class="sm" style="margin-top:3px"><span title="当前实际持有的币">持有 空仓</span><span title="蓝线 = 策略净值　灰虚线 = 死扛基准（一直持有不卖）"><svg width="150" height="30" style="vertical-align:middle"><line x1="0" y1="2.4" x2="150" y2="2.4" stroke="#39424f" stroke-width="1" stroke-dasharray="3,3"/><polyline points="0.0,15.4 75.0,28.0 150.0,27.1" fill="none" stroke="#7c8798" stroke-width="1.1" stroke-dasharray="3,2" opacity=".85"/><polyline points="0.0,2.3 75.0,2.1 150.0,2.0" fill="none" stroke="#3ddc97" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg></span></div>
+<div class="hint" title="周线CCI(9) 大于 100 → 持有；否则空仓">周线CCI(9) 大于 100 → <b>持有</b>；否则空仓</div>
+</div>
+<div class="pcard">
+<div class="name" title="随机%K14>70（w·新）">随机%K14>70（w·新）<span class="rel up" title="相对『死扛基准』的超额: 策略净值 ÷ 基准净值 − 1。正数 = 跑赢了不折腾的基准">vs基准 +4.332%</span></div>
+<div title="当前净值（本金 1000 USDT）"><span class="eq">1,000.64</span><span class="pnl up">+0.06%</span></div>
+<div class="bar" title="仓位：蓝色条=在币上的比例，剩余=现金"><i style="width:0.0%"></i></div>
+<div class="sm"><span title="多少比例的资金在币上">仓位 0.0%</span><span title="还没投出去的钱（按 4% 利息躺着）">现金 1,001</span></div>
+<div class="sm" style="margin-top:3px"><span title="8 个币里有几个当前有买入信号">信号 0/8</span><span title="累计成交笔数">交易 0 笔</span></div>
+<div class="sm" style="margin-top:3px"><span title="当前实际持有的币">持有 空仓</span><span title="蓝线 = 策略净值　灰虚线 = 死扛基准（一直持有不卖）"><svg width="150" height="30" style="vertical-align:middle"><line x1="0" y1="2.4" x2="150" y2="2.4" stroke="#39424f" stroke-width="1" stroke-dasharray="3,3"/><polyline points="0.0,15.4 75.0,28.0 150.0,27.1" fill="none" stroke="#7c8798" stroke-width="1.1" stroke-dasharray="3,2" opacity=".85"/><polyline points="0.0,2.3 75.0,2.1 150.0,2.0" fill="none" stroke="#3ddc97" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg></span></div>
+<div class="hint" title="周线随机%K(14) 大于 70 → 持有；否则空仓">周线随机%K(14) 大于 70 → <b>持有</b>；否则空仓</div>
+</div>
+<div class="pcard">
+<div class="name" title="ROC10>20%（w·新）">ROC10>20%（w·新）<span class="rel up" title="相对『死扛基准』的超额: 策略净值 ÷ 基准净值 − 1。正数 = 跑赢了不折腾的基准">vs基准 +4.332%</span></div>
+<div title="当前净值（本金 1000 USDT）"><span class="eq">1,000.64</span><span class="pnl up">+0.06%</span></div>
+<div class="bar" title="仓位：蓝色条=在币上的比例，剩余=现金"><i style="width:0.0%"></i></div>
+<div class="sm"><span title="多少比例的资金在币上">仓位 0.0%</span><span title="还没投出去的钱（按 4% 利息躺着）">现金 1,001</span></div>
+<div class="sm" style="margin-top:3px"><span title="8 个币里有几个当前有买入信号">信号 0/8</span><span title="累计成交笔数">交易 0 笔</span></div>
+<div class="sm" style="margin-top:3px"><span title="当前实际持有的币">持有 空仓</span><span title="蓝线 = 策略净值　灰虚线 = 死扛基准（一直持有不卖）"><svg width="150" height="30" style="vertical-align:middle"><line x1="0" y1="2.4" x2="150" y2="2.4" stroke="#39424f" stroke-width="1" stroke-dasharray="3,3"/><polyline points="0.0,15.4 75.0,28.0 150.0,27.1" fill="none" stroke="#7c8798" stroke-width="1.1" stroke-dasharray="3,2" opacity=".85"/><polyline points="0.0,2.3 75.0,2.1 150.0,2.0" fill="none" stroke="#3ddc97" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg></span></div>
+<div class="hint" title="周线10 日涨幅大于 20% → 持有；否则空仓">周线10 日涨幅大于 20% → <b>持有</b>；否则空仓</div>
+</div>
+<div class="pcard">
+<div class="name" title="量比5>1.5（w·新）">量比5>1.5（w·新）<span class="rel up" title="相对『死扛基准』的超额: 策略净值 ÷ 基准净值 − 1。正数 = 跑赢了不折腾的基准">vs基准 +4.299%</span></div>
+<div title="当前净值（本金 1000 USDT）"><span class="eq">1,000.32</span><span class="pnl up">+0.03%</span></div>
+<div class="bar" title="仓位：蓝色条=在币上的比例，剩余=现金"><i style="width:0.0%"></i></div>
+<div class="sm"><span title="多少比例的资金在币上">仓位 0.0%</span><span title="还没投出去的钱（按 4% 利息躺着）">现金 1,000</span></div>
+<div class="sm" style="margin-top:3px"><span title="8 个币里有几个当前有买入信号">信号 0/8</span><span title="累计成交笔数">交易 0 笔</span></div>
+<div class="sm" style="margin-top:3px"><span title="当前实际持有的币">持有 空仓</span><span title="蓝线 = 策略净值　灰虚线 = 死扛基准（一直持有不卖）"><svg width="150" height="30" style="vertical-align:middle"><line x1="0" y1="2.2" x2="150" y2="2.2" stroke="#39424f" stroke-width="1" stroke-dasharray="3,3"/><polyline points="0.0,28.0 150.0,27.1" fill="none" stroke="#7c8798" stroke-width="1.1" stroke-dasharray="3,2" opacity=".85"/><polyline points="0.0,2.1 150.0,2.0" fill="none" stroke="#3ddc97" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg></span></div>
+<div class="hint" title="周线成交量 / 5 日均量 大于 1.5 → 持有（放量确认）">周线成交量 / 5 日均量 大于 1.5 → <b>持有</b>（放量确认）</div>
+</div>
+<div class="pcard">
+<div class="name" title="日线 ATR×1.0">日线 ATR×1.0<span class="rel up" title="相对『死扛基准』的超额: 策略净值 ÷ 基准净值 − 1。正数 = 跑赢了不折腾的基准">vs基准 +4.297%</span></div>
+<div title="当前净值（本金 1000 USDT）"><span class="eq">1,000.30</span><span class="pnl up">+0.03%</span></div>
+<div class="bar" title="仓位：蓝色条=在币上的比例，剩余=现金"><i style="width:25.1%"></i></div>
+<div class="sm"><span title="多少比例的资金在币上">仓位 25.1%</span><span title="还没投出去的钱（按 4% 利息躺着）">现金 750</span></div>
+<div class="sm" style="margin-top:3px"><span title="8 个币里有几个当前有买入信号">信号 2/8</span><span title="累计成交笔数">交易 4 笔</span></div>
+<div class="sm" style="margin-top:3px"><span title="当前实际持有的币">持有 AVAX、TRX</span><span title="蓝线 = 策略净值　灰虚线 = 死扛基准（一直持有不卖）"><svg width="150" height="30" style="vertical-align:middle"><line x1="0" y1="3.7" x2="150" y2="3.7" stroke="#39424f" stroke-width="1" stroke-dasharray="3,3"/><polyline points="0.0,3.7 25.0,2.0 50.0,6.4 75.0,21.1 100.0,16.0 125.0,28.0 150.0,27.2" fill="none" stroke="#7c8798" stroke-width="1.1" stroke-dasharray="3,2" opacity=".85"/><polyline points="0.0,4.1 25.0,4.3 50.0,4.2 75.0,4.3 100.0,4.5 125.0,4.5 150.0,3.5" fill="none" stroke="#3ddc97" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg></span></div>
+<div class="hint" title="日线收盘价创 14 日新高 → 持有；创 14 日新低 → 空仓">日线收盘价创 14 日新高 → <b>持有</b>；创 14 日新低 → <b>空仓</b></div>
+</div>
+<div class="pcard">
+<div class="name" title="吊灯22x2.0（w·新）">吊灯22x2.0（w·新）<span class="rel up" title="相对『死扛基准』的超额: 策略净值 ÷ 基准净值 − 1。正数 = 跑赢了不折腾的基准">vs基准 +4.212%</span></div>
+<div title="当前净值（本金 1000 USDT）"><span class="eq">999.49</span><span class="pnl down">-0.05%</span></div>
+<div class="bar" title="仓位：蓝色条=在币上的比例，剩余=现金"><i style="width:25.0%"></i></div>
+<div class="sm"><span title="多少比例的资金在币上">仓位 25.0%</span><span title="还没投出去的钱（按 4% 利息躺着）">现金 750</span></div>
+<div class="sm" style="margin-top:3px"><span title="8 个币里有几个当前有买入信号">信号 2/8</span><span title="累计成交笔数">交易 2 笔</span></div>
+<div class="sm" style="margin-top:3px"><span title="当前实际持有的币">持有 BNB、BTC</span><span title="蓝线 = 策略净值　灰虚线 = 死扛基准（一直持有不卖）"><svg width="150" height="30" style="vertical-align:middle"><line x1="0" y1="1.7" x2="150" y2="1.7" stroke="#39424f" stroke-width="1" stroke-dasharray="3,3"/><polyline points="0.0,28.0 150.0,27.1" fill="none" stroke="#7c8798" stroke-width="1.1" stroke-dasharray="3,2" opacity=".85"/><polyline points="0.0,2.2 150.0,2.0" fill="none" stroke="#ff6b6b" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg></span></div>
+<div class="hint" title="周线吊灯止损：22 日最高 减 2.0xATR → 持有；否则空仓">周线吊灯止损：22 日最高 减 2.0xATR → <b>持有</b>；否则空仓</div>
+</div>
+<div class="pcard">
+<div class="name" title="日线 ATR×1.5">日线 ATR×1.5<span class="rel up" title="相对『死扛基准』的超额: 策略净值 ÷ 基准净值 − 1。正数 = 跑赢了不折腾的基准">vs基准 +3.227%</span></div>
+<div title="当前净值（本金 1000 USDT）"><span class="eq">990.05</span><span class="pnl down">-0.99%</span></div>
+<div class="bar" title="仓位：蓝色条=在币上的比例，剩余=现金"><i style="width:11.7%"></i></div>
+<div class="sm"><span title="多少比例的资金在币上">仓位 11.7%</span><span title="还没投出去的钱（按 4% 利息躺着）">现金 875</span></div>
+<div class="sm" style="margin-top:3px"><span title="8 个币里有几个当前有买入信号">信号 1/8</span><span title="累计成交笔数">交易 5 笔</span></div>
+<div class="sm" style="margin-top:3px"><span title="当前实际持有的币">持有 OKB</span><span title="蓝线 = 策略净值　灰虚线 = 死扛基准（一直持有不卖）"><svg width="150" height="30" style="vertical-align:middle"><line x1="0" y1="3.7" x2="150" y2="3.7" stroke="#39424f" stroke-width="1" stroke-dasharray="3,3"/><polyline points="0.0,3.7 25.0,2.0 50.0,6.4 75.0,21.1 100.0,16.0 125.0,28.0 150.0,27.2" fill="none" stroke="#7c8798" stroke-width="1.1" stroke-dasharray="3,2" opacity=".85"/><polyline points="0.0,4.4 25.0,3.6 50.0,7.0 75.0,8.5 100.0,10.6 125.0,10.0 150.0,9.4" fill="none" stroke="#ff6b6b" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg></span></div>
+<div class="hint" title="日线收盘价创 14 日新高 → 持有；创 14 日新低 → 空仓">日线收盘价创 14 日新高 → <b>持有</b>；创 14 日新低 → <b>空仓</b></div>
+</div>
+</div></div>
+<div class="card"><h2>④ 币价 <span class="tag">纸面 8 个币</span></h2>
+<div class="sub"><b>收盘价</b>＝最近一个已收盘日线（信号按它算，T 日收盘确认、T+1 成交）；<b>实时价／今日涨跌</b>＝此刻的行情，<b>只给你盯盘参考，不参与任何计算</b>。（日线要等 UTC 23:59 收盘，所以面板天然比今天慢一天）<br><b>「有信号策略数」= 有几个策略现在想持有它</b>——这个数越大说明大家意见越一致；0 说明当前没有策略想买。</div>
+<table><thead><tr><th title="币种">币</th><th title="最近一个已收盘日线（信号就按这个算）">收盘价</th><th title="此刻的实时价，仅供盯盘参考，不参与信号计算">实时价</th><th title="此刻相对24小时前的涨跌">今日涨跌</th><th title="最近 1 天涨跌">1日</th><th title="最近 7 天涨跌">7日</th><th title="最近 30 天涨跌">30日</th><th title="当前有多少个策略有买入信号">有信号策略数</th></tr></thead><tbody>
+<tr><td>BNB</td><td>679.8</td><td>672.4</td><td class="down">-0.72%</td><td class="down">-0.12%</td><td class="down">-5.59%</td><td class="down">-7.25%</td><td>2</td></tr>
+<tr><td>BTC</td><td>74,015.2</td><td>73,514.7</td><td class="down">-0.11%</td><td class="up">+0.30%</td><td class="down">-8.06%</td><td class="down">-9.57%</td><td>2</td></tr>
+<tr><td>OKB</td><td>97.85</td><td>98.11</td><td class="up">+1.97%</td><td class="up">+0.90%</td><td class="down">-11.79%</td><td class="down">-19.14%</td><td>3</td></tr>
+<tr><td>XRP</td><td>1.052</td><td>1.042</td><td class="down">-1.33%</td><td class="down">-0.39%</td><td class="down">-19.37%</td><td class="down">-21.59%</td><td>0</td></tr>
+<tr><td>SOL</td><td>83.28</td><td>82.72</td><td class="up">+0.19%</td><td class="down">-0.08%</td><td class="down">-12.90%</td><td class="down">-21.26%</td><td>0</td></tr>
+<tr><td>DOGE</td><td>0.06751</td><td>0.06682</td><td class="down">-1.26%</td><td class="down">-0.78%</td><td class="down">-12.42%</td><td class="down">-17.90%</td><td>0</td></tr>
+<tr><td>AVAX</td><td>8.514</td><td>8.61</td><td class="up">+1.87%</td><td class="up">+1.65%</td><td class="down">-2.56%</td><td class="down">-16.09%</td><td>2</td></tr>
+<tr><td>TRX</td><td>0.317</td><td>0.3169</td><td class="down">-0.22%</td><td class="down">-0.25%</td><td class="down">-0.94%</td><td class="down">-3.68%</td><td>1</td></tr>
+</tbody></table></div>
+<div class="card"><h2>⑤ 最近交易 <span class="tag">最新 12 笔</span></h2>
+<div class="sub">纸面盘实际成交的流水。<b>信号当天收盘确认、第二天才成交</b>（T+1），所以看到的不是实时价格。</div>
+<table><thead><tr><th title="成交对应的行情日">日期</th><th title="哪个策略">策略</th><th title="哪个币">币</th><th title="买入 / 卖出 / 留现金">动作</th><th title="成交金额（USDT）">金额</th><th title="成交价">价格</th><th title="备注">备注</th></tr></thead><tbody>
+<tr><td>2026-11-10</td><td>流动性5/20>30%（w·新）</td><td>TRX</td><td class="hold">留现金</td><td>125.0</td><td>0.3178</td><td style="text-align:left;color:#6b7688;font-size:11.5px">初始建仓(信号空仓, 该份额留现金)</td></tr>
+<tr><td>2026-11-10</td><td>流动性5/20>30%（w·新）</td><td>AVAX</td><td class="hold">留现金</td><td>125.0</td><td>8.376</td><td style="text-align:left;color:#6b7688;font-size:11.5px">初始建仓(信号空仓, 该份额留现金)</td></tr>
+<tr><td>2026-11-10</td><td>流动性5/20>30%（w·新）</td><td>DOGE</td><td class="hold">留现金</td><td>125.0</td><td>0.06804</td><td style="text-align:left;color:#6b7688;font-size:11.5px">初始建仓(信号空仓, 该份额留现金)</td></tr>
+<tr><td>2026-11-10</td><td>流动性5/20>30%（w·新）</td><td>SOL</td><td class="hold">留现金</td><td>125.0</td><td>83.35</td><td style="text-align:left;color:#6b7688;font-size:11.5px">初始建仓(信号空仓, 该份额留现金)</td></tr>
+<tr><td>2026-11-10</td><td>流动性5/20>30%（w·新）</td><td>XRP</td><td class="hold">留现金</td><td>125.0</td><td>1.0565</td><td style="text-align:left;color:#6b7688;font-size:11.5px">初始建仓(信号空仓, 该份额留现金)</td></tr>
+<tr><td>2026-11-10</td><td>流动性5/20>30%（w·新）</td><td>OKB</td><td class="buy">买入</td><td>125.0</td><td>97.27094</td><td style="text-align:left;color:#6b7688;font-size:11.5px">初始建仓(信号持有)</td></tr>
+<tr><td>2026-11-10</td><td>流动性5/20>30%（w·新）</td><td>BTC</td><td class="hold">留现金</td><td>125.0</td><td>73796.06</td><td style="text-align:left;color:#6b7688;font-size:11.5px">初始建仓(信号空仓, 该份额留现金)</td></tr>
+<tr><td>2026-11-10</td><td>流动性5/20>30%（w·新）</td><td>BNB</td><td class="hold">留现金</td><td>125.0</td><td>680.58</td><td style="text-align:left;color:#6b7688;font-size:11.5px">初始建仓(信号空仓, 该份额留现金)</td></tr>
+<tr><td>2026-11-10</td><td>量比5>1.5（w·新）</td><td>TRX</td><td class="hold">留现金</td><td>125.0</td><td>0.3178</td><td style="text-align:left;color:#6b7688;font-size:11.5px">初始建仓(信号空仓, 该份额留现金)</td></tr>
+<tr><td>2026-11-10</td><td>量比5>1.5（w·新）</td><td>AVAX</td><td class="hold">留现金</td><td>125.0</td><td>8.376</td><td style="text-align:left;color:#6b7688;font-size:11.5px">初始建仓(信号空仓, 该份额留现金)</td></tr>
+<tr><td>2026-11-10</td><td>量比5>1.5（w·新）</td><td>DOGE</td><td class="hold">留现金</td><td>125.0</td><td>0.06804</td><td style="text-align:left;color:#6b7688;font-size:11.5px">初始建仓(信号空仓, 该份额留现金)</td></tr>
+<tr><td>2026-11-10</td><td>量比5>1.5（w·新）</td><td>SOL</td><td class="hold">留现金</td><td>125.0</td><td>83.35</td><td style="text-align:left;color:#6b7688;font-size:11.5px">初始建仓(信号空仓, 该份额留现金)</td></tr>
+</tbody></table></div>
+<div class="card"><h2>⑥ 衰减监控 <span class="tag">回测里预期的 vs 纸面盘实际跑出来的</span></h2>
+<div class="sub">每个策略回测时算出「应该年化多少」，纸面盘跑起来后对照实际年化。差太远说明<b>策略可能在失效</b>（策略一旦被广泛使用就会衰减，这是有实证的）。<b>满 30 天才下结论</b>；「观察」继续跑，「预警」才考虑降权或退出。<br>「差多少」用<b>百分点差</b>（实际减预期）而不是倍数——预期接近 0 时倍数会变成天文数字，没意义。</div>
+<table><thead><tr><th title="策略名称">策略</th><th title="回测算出的年化收益（预期）">回测预期年化</th><th title="纸面盘最近 60 个交易日的实际年化">实际年化</th><th title="纸面盘期间的最大回撤（最惨时亏了多少）">实际最大回撤</th><th title="纸面盘已运行天数">已跑天数</th><th title="实际年化 减去 回测预期年化（单位：百分点）。负数=比预期差">差多少</th><th title="结论">状态</th></tr></thead><tbody>
+<tr><td>日线 ATR突破x1.0</td><td class="flat">+16.0%</td><td class="down">+7.0%</td><td class="flat">-0.1%</td><td class="flat">7</td><td class="down">-9pp</td><td><span class="badge n">样本不足</span></td></tr>
+<tr><td>日线 MACD26/52/9</td><td class="flat">+9.9%</td><td class="up">+7.5%</td><td class="flat">+0.0%</td><td class="flat">7</td><td class="down">-2pp</td><td><span class="badge n">样本不足</span></td></tr>
+<tr><td>周线 MACD5/10/5</td><td class="flat">-2.4%</td><td class="up">+7.5%</td><td class="flat">+0.0%</td><td class="flat">7</td><td class="flat">+10pp</td><td><span class="badge s">预期为负</span></td></tr>
+<tr><td>周线 MA2/6</td><td class="flat">+0.0%</td><td class="up">+7.5%</td><td class="flat">+0.0%</td><td class="flat">7</td><td class="flat">+8pp</td><td><span class="badge n">样本不足</span></td></tr>
+<tr><td>日线 ATR突破x1.5</td><td class="flat">+4.1%</td><td class="down">-41.0%</td><td class="flat">-1.2%</td><td class="flat">7</td><td class="down">-45pp</td><td><span class="badge n">样本不足</span></td></tr>
+<tr><td>CCI9>100（w·新）</td><td class="flat">+86.6%</td><td class="down">+10.3%</td><td class="flat">+0.0%</td><td class="flat">3</td><td class="down">-76pp</td><td><span class="badge n">样本不足</span></td></tr>
+<tr><td>随机%K14>70（w·新）</td><td class="flat">+83.3%</td><td class="down">+10.3%</td><td class="flat">+0.0%</td><td class="flat">3</td><td class="down">-73pp</td><td><span class="badge n">样本不足</span></td></tr>
+<tr><td>ROC10>20%（w·新）</td><td class="flat">+53.8%</td><td class="down">+10.3%</td><td class="flat">+0.0%</td><td class="flat">3</td><td class="down">-44pp</td><td><span class="badge n">样本不足</span></td></tr>
+<tr><td>吊灯22x2.0（w·新）</td><td class="flat">+47.2%</td><td class="down">+11.6%</td><td class="flat">+0.0%</td><td class="flat">2</td><td class="down">-36pp</td><td><span class="badge n">样本不足</span></td></tr>
+<tr><td>量比5>1.5（w·新）</td><td class="flat">+39.2%</td><td class="down">+4.0%</td><td class="flat">+0.0%</td><td class="flat">2</td><td class="down">-35pp</td><td><span class="badge n">样本不足</span></td></tr>
+<tr><td>流动性5/20>30%（w·新）</td><td class="flat">+24.1%</td><td class="up">+55.7%</td><td class="flat">+0.0%</td><td class="flat">2</td><td class="flat">+32pp</td><td><span class="badge n">样本不足</span></td></tr>
+</tbody></table>
+<div class="note"><b>依据</b>：策略公开后年化会大幅回落（邢不行 10 策略实证：小市值 91.5%→24.8%），所以<b>回测数字只能当锚，不能当结论</b>。</div></div>
 <div class="card"><h2>名词解释 <span class="tag">看不懂的地方查这里</span></h2>
 <table class="terms"><thead><tr><th style="width:132px">名词</th><th style="text-align:left">大白话解释</th></tr></thead><tbody>
 <tr><td>死扛（对比基准）</td><td style="text-align:left">不看任何信号，一直持有 8 个币不动。这是「不折腾能赚多少」的及格线。</td></tr>
@@ -112,7 +316,27 @@ th[title]:hover{color:#c8d0dd;text-decoration:underline dotted #4a5464}
 <tr><td>时间切分</td><td style="text-align:left">把样本外那段再切成 5 段分别算，看是不是只有一段运气好。</td></tr>
 <tr><td>衰减</td><td style="text-align:left">策略用的人越多、越公开，效果越差。</td></tr>
 </tbody></table></div>
-<div class="note" style="margin-top:4px">口径：收盘价＝最近一个已收盘日线；实时价＝此刻报价，仅供参考。｜公开脱敏版 · 不含任何策略参数、持仓或交易明细。</div></div>
+<table class="terms"><thead><tr><th style="width:132px">名词</th><th style="text-align:left">大白话解释</th></tr></thead><tbody>
+<tr><td>死扛（对比基准）</td><td style="text-align:left">不看任何信号，一直持有 8 个币不动。这是「不折腾能赚多少」的及格线。</td></tr>
+<tr><td>样本外</td><td style="text-align:left">回测时故意留出来、<b>没参与选策略</b>的那段行情，专门用来验真伪。</td></tr>
+<tr><td>回测</td><td style="text-align:left">用历史行情模拟跑一遍某个策略，看它历史上赚不赚。</td></tr>
+<tr><td>回测预期年化</td><td style="text-align:left">回测算出来「这个策略应该一年赚多少」。是预期，不是承诺。</td></tr>
+<tr><td>实际年化</td><td style="text-align:left">纸面盘最近 60 个交易日的真实表现换算成年化。</td></tr>
+<tr><td>差多少</td><td style="text-align:left">实际年化 减去 回测预期年化，单位百分点。负数 = 比预期差。</td></tr>
+<tr><td>回撤</td><td style="text-align:left">从最高点跌下来的幅度，最惨时亏了多少。数字越负越惨。</td></tr>
+<tr><td>年化</td><td style="text-align:left">把一段时间的收益换算成「一年赚多少」，方便不同时间段比较。</td></tr>
+<tr><td>等权 1/8</td><td style="text-align:left">8 个币每个占 1/8 仓位，不多不少。</td></tr>
+<tr><td>留现金</td><td style="text-align:left">这个币没信号时，那份钱不买入，按 4% 利息躺着。</td></tr>
+<tr><td>滑点 0.3%</td><td style="text-align:left">实际成交价比看到的价格差 0.3%（买卖都要算）。摩擦成本。</td></tr>
+<tr><td>T+1</td><td style="text-align:left">今天收盘看到信号，明天才成交。防止用当天涨跌作弊。</td></tr>
+<tr><td>信号</td><td style="text-align:left">策略根据行情算出来的「现在该买/该卖」的意思。</td></tr>
+<tr><td>纸面盘</td><td style="text-align:left">用真行情、真价格规则模拟交易，<b>不花真钱</b>。</td></tr>
+<tr><td>准入闸门</td><td style="text-align:left">新策略想进纸面盘必须过的 5 道关：样本外收益 > 2%、回撤 > −45%、5 个时间切分里 ≥3 个为正、滑点加到 0.5% 仍为正、同族去重。</td></tr>
+<tr><td>同族去重</td><td style="text-align:left">同一个指标家族只留最好的一个，避免 10 个「换皮」的策略挤在一起。</td></tr>
+<tr><td>时间切分</td><td style="text-align:left">把样本外那段再切成 5 段分别算，看是不是只有一段运气好。</td></tr>
+<tr><td>衰减</td><td style="text-align:left">策略用的人越多、越公开，效果越差。</td></tr>
+</tbody></table></div>
+<div class="note" style="margin-top:4px">口径：T 日收盘确认信号 → T+1 成交；滑点 0.3% + 手续费 0.1%；每币固定 1/8 等权，无信号份额留现金（现金年化 4%）；每策略独立 1000 USDT 纸面本金。<b>不是真钱。</b><br>面板：<code>D:\WebArchives\reports\strategy\dashboard.html</code>｜快照：<code>D:\WebArchives\reports\strategy\dashboard.json</code><br>跑法：09:05 算信号 → 09:20 执行纸面交易 → 09:30 生成面板并推送 → 09:40 备份数据</div>
 </div>
 <script>
 // 交互：点击币列头可切换「仅纸面8币 / 全部12币」；点击策略行可折叠
