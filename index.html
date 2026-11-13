@@ -90,16 +90,16 @@ th[title]:hover{color:#c8d0dd;text-decoration:underline dotted #4a5464}
 </style></head><body data-ncoins="8"><div class="wrap">
 <div class="top"><div>
 <h1>量化看盘台</h1>
-<div class="meta">生成于 2026-11-13 09:42:27 ｜ 行情日 <b>2026-11-12</b>（已收盘）｜ 信号更新 2026-11-13T09:05:59 ｜ 实时价取自交易所当前报价</div>
+<div class="meta">生成于 2026-11-13 09:48:47 ｜ 行情日 <b>2026-11-12</b>（已收盘）｜ 信号更新 2026-11-13T09:05:59 ｜ 实时价取自交易所当前报价</div>
 </div><div class="kpis">
 <div class="kpi"><div class="v">71,460.0</div><div class="l" title="比特币最近一个已收盘日线的收盘价 —— 信号就是用它算的">BTC 收盘价<br>(2026-11-12)</div></div>
-<div class="kpi"><div class="v down">-3.75%</div><div class="l" title="比特币此刻的实时涨跌幅（最近24小时）。仅供盯盘参考，不参与信号计算">BTC 实时涨跌<br>(此刻)</div></div>
+<div class="kpi"><div class="v down">-3.79%</div><div class="l" title="比特币此刻的实时涨跌幅（最近24小时）。仅供盯盘参考，不参与信号计算">BTC 实时涨跌<br>(此刻)</div></div>
 <div class="kpi"><div class="v down">-6.08%</div><div class="l" title="比特币最近 7 天涨跌">BTC 7日</div></div>
 <div class="kpi"><div class="v down">-14.08%</div><div class="l" title="比特币最近 30 天涨跌">BTC 30日</div></div>
 <div class="kpi"><div class="v down">-0.12%</div><div class="l" title="所有策略当前收益的平均值">11 策略平均</div></div>
 <div class="kpi"><div class="v">4/11</div><div class="l" title="有多少策略现在手上拿着币（其余是空仓）">有仓策略</div></div>
 </div></div>
-<div class="verdict"><div class="t">一句话结论</div><div class="b"><b>11 个策略</b>里 <b>4 个</b>当前手上有币，平均收益 <b>-0.12%</b>。 暂时<b>没有任何策略触发预警</b>。 纸面盘才跑 <b>8 天</b>，满 30 天才够下结论 —— 现在看到的主要是<b>回测预期</b>，不是战绩。 所有策略横向比的是同一条线：<b>死扛（一直持有不卖）</b>在2024-12-31 之后赚了 <b>-21.8%</b>。 <b>此刻</b> BTC 24 小时涨跌 <b>-3.75%</b>（实时，仅参考；信号按 2026-11-12 收盘价算）。</div></div>
+<div class="verdict"><div class="t">一句话结论</div><div class="b"><b>11 个策略</b>里 <b>4 个</b>当前手上有币，平均收益 <b>-0.12%</b>。 暂时<b>没有任何策略触发预警</b>。 纸面盘才跑 <b>8 天</b>，满 30 天才够下结论 —— 现在看到的主要是<b>回测预期</b>，不是战绩。 所有策略横向比的是同一条线：<b>死扛（一直持有不卖）</b>在2024-12-31 之后赚了 <b>-21.8%</b>。 <b>此刻</b> BTC 24 小时涨跌 <b>-3.79%</b>（实时，仅参考；信号按 2026-11-12 收盘价算）。</div></div>
 <div class="howto"><h3>怎么看这个面板（3 步）</h3><ol><li><b>先看顶部「一句话结论」</b> —— 现在整体是什么状态、有没有需要你动手的地方。</li><li><b>再看你关心的那一行</b> —— ①①信号矩阵看策略每天想持有哪些币；③纸面组合看每个策略实际赚了多少、仓位多少。</li><li><b>拿不准就看「⏱ 对比基准」和「⑥ 衰减监控」</b> —— 前者是所有策略的及格线，后者告诉你某个策略是不是开始失效了。</li></ol></div>
 <div class="card"><h2>⏱ 对比基准：死扛（一直持有不卖）<span class="tag">所有策略横向比较都对这条线</span></h2>
 <div class="sub">「死扛」= 不看任何信号，把 8 个币等权买着一直不动，现金也按 4% 利息躺着。<b>它代表「不折腾能赚多少」</b>。任何一个策略的样本外收益比它高，才叫「这个策略有用」。</div>
@@ -254,14 +254,14 @@ th[title]:hover{color:#c8d0dd;text-decoration:underline dotted #4a5464}
 <div class="card"><h2>④ 币价 <span class="tag">纸面 8 个币</span></h2>
 <div class="sub"><b>收盘价</b>＝最近一个已收盘日线（信号按它算，T 日收盘确认、T+1 成交）；<b>实时价／今日涨跌</b>＝此刻的行情，<b>只给你盯盘参考，不参与任何计算</b>。（日线要等 UTC 23:59 收盘，所以面板天然比今天慢一天）<br><b>「有信号策略数」= 有几个策略现在想持有它</b>——这个数越大说明大家意见越一致；0 说明当前没有策略想买。</div>
 <table><thead><tr><th title="币种">币</th><th title="最近一个已收盘日线（信号就按这个算）">收盘价</th><th title="此刻的实时价，仅供盯盘参考，不参与信号计算">实时价</th><th title="此刻相对24小时前的涨跌">今日涨跌</th><th title="最近 1 天涨跌">1日</th><th title="最近 7 天涨跌">7日</th><th title="最近 30 天涨跌">30日</th><th title="当前有多少个策略有买入信号">有信号策略数</th></tr></thead><tbody>
-<tr><td>BNB</td><td>657</td><td>654.4</td><td class="down">-3.65%</td><td class="down">-3.35%</td><td class="down">-4.75%</td><td class="down">-11.43%</td><td>2</td></tr>
-<tr><td>BTC</td><td>71,460.0</td><td>70,939.2</td><td class="down">-3.75%</td><td class="down">-3.45%</td><td class="down">-6.08%</td><td class="down">-14.08%</td><td>2</td></tr>
+<tr><td>BNB</td><td>657</td><td>654</td><td class="down">-3.71%</td><td class="down">-3.35%</td><td class="down">-4.75%</td><td class="down">-11.43%</td><td>2</td></tr>
+<tr><td>BTC</td><td>71,460.0</td><td>70,932.3</td><td class="down">-3.79%</td><td class="down">-3.45%</td><td class="down">-6.08%</td><td class="down">-14.08%</td><td>2</td></tr>
 <tr><td>OKB</td><td>97.72</td><td>97.49</td><td class="up">+0.29%</td><td class="down">-0.13%</td><td class="down">-7.42%</td><td class="down">-20.31%</td><td>3</td></tr>
-<tr><td>XRP</td><td>1.041</td><td>1.031</td><td class="down">-1.84%</td><td class="down">-1.05%</td><td class="down">-13.74%</td><td class="down">-23.78%</td><td>0</td></tr>
-<tr><td>SOL</td><td>81.72</td><td>81.37</td><td class="down">-2.33%</td><td class="down">-1.87%</td><td class="down">-8.52%</td><td class="down">-23.50%</td><td>0</td></tr>
-<tr><td>DOGE</td><td>0.06651</td><td>0.06628</td><td class="down">-1.62%</td><td class="down">-1.48%</td><td class="down">-6.55%</td><td class="down">-21.19%</td><td>0</td></tr>
-<tr><td>AVAX</td><td>8.363</td><td>8.355</td><td class="down">-2.04%</td><td class="down">-1.77%</td><td class="up">+2.31%</td><td class="down">-18.23%</td><td>2</td></tr>
-<tr><td>TRX</td><td>0.3158</td><td>0.3157</td><td class="down">-0.41%</td><td class="down">-0.38%</td><td class="down">-0.82%</td><td class="down">-3.54%</td><td>1</td></tr>
+<tr><td>XRP</td><td>1.041</td><td>1.032</td><td class="down">-1.76%</td><td class="down">-1.05%</td><td class="down">-13.74%</td><td class="down">-23.78%</td><td>0</td></tr>
+<tr><td>SOL</td><td>81.72</td><td>81.3</td><td class="down">-2.38%</td><td class="down">-1.87%</td><td class="down">-8.52%</td><td class="down">-23.50%</td><td>0</td></tr>
+<tr><td>DOGE</td><td>0.06651</td><td>0.06631</td><td class="down">-1.40%</td><td class="down">-1.48%</td><td class="down">-6.55%</td><td class="down">-21.19%</td><td>0</td></tr>
+<tr><td>AVAX</td><td>8.363</td><td>8.367</td><td class="down">-1.67%</td><td class="down">-1.77%</td><td class="up">+2.31%</td><td class="down">-18.23%</td><td>2</td></tr>
+<tr><td>TRX</td><td>0.3158</td><td>0.3156</td><td class="down">-0.44%</td><td class="down">-0.38%</td><td class="down">-0.82%</td><td class="down">-3.54%</td><td>1</td></tr>
 </tbody></table></div>
 <div class="card"><h2>⑤ 最近交易 <span class="tag">最新 12 笔</span></h2>
 <div class="sub">纸面盘实际成交的流水。<b>信号当天收盘确认、第二天才成交</b>（T+1），所以看到的不是实时价格。</div>
