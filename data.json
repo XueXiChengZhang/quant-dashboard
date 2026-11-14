@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-13 09:48:47",
- "signal_updated": "2026-11-13T09:05:59.884112",
- "latest_bar": "2026-11-12",
+ "generated_at": "2026-11-14 09:35:49",
+ "signal_updated": "2026-11-14T09:05:50.165435",
+ "latest_bar": "2026-11-13",
  "coins": [
   "BNBUSDT",
   "BTCUSDT",
@@ -582,10 +582,10 @@
   {
    "key": "S2_MACD2652",
    "label": "日线 MACD26/52/9",
-   "equity": 1001.51,
-   "pnl_pct": 0.151,
+   "equity": 1001.61,
+   "pnl_pct": 0.161,
    "pos": 0,
-   "cash": 1001.51,
+   "cash": 1001.61,
    "trades_n": 0,
    "pending": 0,
    "curve": [
@@ -596,7 +596,8 @@
     1000.86,
     1001.2903,
     1001.3979,
-    1001.5055
+    1001.5055,
+    1001.6131
    ],
    "held": [],
    "last_sig": {
@@ -620,17 +621,18 @@
     978.5253,
     957.6353,
     959.0937,
-    942.9101
+    942.9101,
+    913.0266
    ],
-   "rel_pct": 6.214
+   "rel_pct": 9.703
   },
   {
    "key": "S3_MACD5_10_5",
    "label": "周线 MACD5/10/5",
-   "equity": 1001.51,
-   "pnl_pct": 0.151,
+   "equity": 1001.61,
+   "pnl_pct": 0.161,
    "pos": 0,
-   "cash": 1001.51,
+   "cash": 1001.61,
    "trades_n": 0,
    "pending": 0,
    "curve": [
@@ -641,7 +643,8 @@
     1000.86,
     1001.2903,
     1001.3979,
-    1001.5055
+    1001.5055,
+    1001.6131
    ],
    "held": [],
    "last_sig": {
@@ -665,17 +668,18 @@
     978.5253,
     957.6353,
     959.0937,
-    942.9101
+    942.9101,
+    913.0266
    ],
-   "rel_pct": 6.214
+   "rel_pct": 9.703
   },
   {
    "key": "S4_MA2_6",
    "label": "周线 MA2/6",
-   "equity": 1001.51,
-   "pnl_pct": 0.151,
+   "equity": 1001.61,
+   "pnl_pct": 0.161,
    "pos": 0,
-   "cash": 1001.51,
+   "cash": 1001.61,
    "trades_n": 0,
    "pending": 0,
    "curve": [
@@ -686,7 +690,8 @@
     1000.86,
     1001.2903,
     1001.3979,
-    1001.5055
+    1001.5055,
+    1001.6131
    ],
    "held": [],
    "last_sig": {
@@ -710,23 +715,179 @@
     978.5253,
     957.6353,
     959.0937,
-    942.9101
+    942.9101,
+    913.0266
    ],
-   "rel_pct": 6.214
+   "rel_pct": 9.703
+  },
+  {
+   "key": "M1_cci_w",
+   "label": "CCI9>100（w·新）",
+   "equity": 1000.86,
+   "pnl_pct": 0.086,
+   "pos": 0,
+   "cash": 1000.86,
+   "trades_n": 0,
+   "pending": 0,
+   "curve": [
+    1000.1075,
+    1000.5374,
+    1000.6449,
+    1000.7525,
+    1000.86
+   ],
+   "held": [],
+   "last_sig": {
+    "BNBUSDT": false,
+    "BTCUSDT": false,
+    "OKBUSDT": false,
+    "XRPUSDT": false,
+    "SOLUSDT": false,
+    "DOGEUSDT": false,
+    "AVAXUSDT": false,
+    "TRXUSDT": false
+   },
+   "start": "2026-11-10",
+   "rule": "周线CCI(9) 大于 100 → <b>持有</b>；否则空仓",
+   "params": "9, 100",
+   "bench": [
+    978.5253,
+    957.6353,
+    959.0937,
+    942.9101,
+    913.0266
+   ],
+   "rel_pct": 9.62
+  },
+  {
+   "key": "M2_stoch_w",
+   "label": "随机%K14>70（w·新）",
+   "equity": 1000.86,
+   "pnl_pct": 0.086,
+   "pos": 0,
+   "cash": 1000.86,
+   "trades_n": 0,
+   "pending": 0,
+   "curve": [
+    1000.1075,
+    1000.5374,
+    1000.6449,
+    1000.7525,
+    1000.86
+   ],
+   "held": [],
+   "last_sig": {
+    "BNBUSDT": false,
+    "BTCUSDT": false,
+    "OKBUSDT": false,
+    "XRPUSDT": false,
+    "SOLUSDT": false,
+    "DOGEUSDT": false,
+    "AVAXUSDT": false,
+    "TRXUSDT": false
+   },
+   "start": "2026-11-10",
+   "rule": "周线随机%K(14) 大于 70 → <b>持有</b>；否则空仓",
+   "params": "14, 70",
+   "bench": [
+    978.5253,
+    957.6353,
+    959.0937,
+    942.9101,
+    913.0266
+   ],
+   "rel_pct": 9.62
+  },
+  {
+   "key": "M3_roc_w",
+   "label": "ROC10>20%（w·新）",
+   "equity": 1000.86,
+   "pnl_pct": 0.086,
+   "pos": 0,
+   "cash": 1000.86,
+   "trades_n": 0,
+   "pending": 0,
+   "curve": [
+    1000.1075,
+    1000.5374,
+    1000.6449,
+    1000.7525,
+    1000.86
+   ],
+   "held": [],
+   "last_sig": {
+    "BNBUSDT": false,
+    "BTCUSDT": false,
+    "OKBUSDT": false,
+    "XRPUSDT": false,
+    "SOLUSDT": false,
+    "DOGEUSDT": false,
+    "AVAXUSDT": false,
+    "TRXUSDT": false
+   },
+   "start": "2026-11-10",
+   "rule": "周线10 日涨幅大于 20% → <b>持有</b>；否则空仓",
+   "params": "10, 20%",
+   "bench": [
+    978.5253,
+    957.6353,
+    959.0937,
+    942.9101,
+    913.0266
+   ],
+   "rel_pct": 9.62
+  },
+  {
+   "key": "M5_vol_ratio_w",
+   "label": "量比5>1.5（w·新）",
+   "equity": 1000.54,
+   "pnl_pct": 0.054,
+   "pos": 0,
+   "cash": 1000.54,
+   "trades_n": 0,
+   "pending": 0,
+   "curve": [
+    1000.2149,
+    1000.3224,
+    1000.4299,
+    1000.5374
+   ],
+   "held": [],
+   "last_sig": {
+    "BNBUSDT": false,
+    "BTCUSDT": false,
+    "OKBUSDT": false,
+    "XRPUSDT": false,
+    "SOLUSDT": false,
+    "DOGEUSDT": false,
+    "AVAXUSDT": false,
+    "TRXUSDT": false
+   },
+   "start": "2026-11-11",
+   "rule": "周线成交量 / 5 日均量 大于 1.5 → <b>持有</b>（放量确认）",
+   "params": "5, x1.5",
+   "bench": [
+    957.6353,
+    959.0937,
+    942.9101,
+    913.0266
+   ],
+   "rel_pct": 9.585
   },
   {
    "key": "M6_liq_trend_w",
    "label": "流动性5/20>30%（w·新）",
-   "equity": 1000.84,
-   "pnl_pct": 0.084,
-   "pos": 0.1255,
-   "cash": 875.26,
+   "equity": 995.87,
+   "pnl_pct": -0.413,
+   "pos": 0.121,
+   "cash": 875.36,
    "trades_n": 1,
    "pending": 0,
    "curve": [
     999.7026,
     1000.9147,
-    1000.8416
+    1000.8416,
+    995.8725
    ],
    "held": [
     "OKBUSDT"
@@ -747,163 +908,18 @@
    "bench": [
     957.6353,
     959.0937,
-    942.9101
+    942.9101,
+    913.0266
    ],
-   "rel_pct": 6.144
-  },
-  {
-   "key": "M1_cci_w",
-   "label": "CCI9>100（w·新）",
-   "equity": 1000.75,
-   "pnl_pct": 0.075,
-   "pos": 0,
-   "cash": 1000.75,
-   "trades_n": 0,
-   "pending": 0,
-   "curve": [
-    1000.1075,
-    1000.5374,
-    1000.6449,
-    1000.7525
-   ],
-   "held": [],
-   "last_sig": {
-    "BNBUSDT": false,
-    "BTCUSDT": false,
-    "OKBUSDT": false,
-    "XRPUSDT": false,
-    "SOLUSDT": false,
-    "DOGEUSDT": false,
-    "AVAXUSDT": false,
-    "TRXUSDT": false
-   },
-   "start": "2026-11-10",
-   "rule": "周线CCI(9) 大于 100 → <b>持有</b>；否则空仓",
-   "params": "9, 100",
-   "bench": [
-    978.5253,
-    957.6353,
-    959.0937,
-    942.9101
-   ],
-   "rel_pct": 6.134
-  },
-  {
-   "key": "M2_stoch_w",
-   "label": "随机%K14>70（w·新）",
-   "equity": 1000.75,
-   "pnl_pct": 0.075,
-   "pos": 0,
-   "cash": 1000.75,
-   "trades_n": 0,
-   "pending": 0,
-   "curve": [
-    1000.1075,
-    1000.5374,
-    1000.6449,
-    1000.7525
-   ],
-   "held": [],
-   "last_sig": {
-    "BNBUSDT": false,
-    "BTCUSDT": false,
-    "OKBUSDT": false,
-    "XRPUSDT": false,
-    "SOLUSDT": false,
-    "DOGEUSDT": false,
-    "AVAXUSDT": false,
-    "TRXUSDT": false
-   },
-   "start": "2026-11-10",
-   "rule": "周线随机%K(14) 大于 70 → <b>持有</b>；否则空仓",
-   "params": "14, 70",
-   "bench": [
-    978.5253,
-    957.6353,
-    959.0937,
-    942.9101
-   ],
-   "rel_pct": 6.134
-  },
-  {
-   "key": "M3_roc_w",
-   "label": "ROC10>20%（w·新）",
-   "equity": 1000.75,
-   "pnl_pct": 0.075,
-   "pos": 0,
-   "cash": 1000.75,
-   "trades_n": 0,
-   "pending": 0,
-   "curve": [
-    1000.1075,
-    1000.5374,
-    1000.6449,
-    1000.7525
-   ],
-   "held": [],
-   "last_sig": {
-    "BNBUSDT": false,
-    "BTCUSDT": false,
-    "OKBUSDT": false,
-    "XRPUSDT": false,
-    "SOLUSDT": false,
-    "DOGEUSDT": false,
-    "AVAXUSDT": false,
-    "TRXUSDT": false
-   },
-   "start": "2026-11-10",
-   "rule": "周线10 日涨幅大于 20% → <b>持有</b>；否则空仓",
-   "params": "10, 20%",
-   "bench": [
-    978.5253,
-    957.6353,
-    959.0937,
-    942.9101
-   ],
-   "rel_pct": 6.134
-  },
-  {
-   "key": "M5_vol_ratio_w",
-   "label": "量比5>1.5（w·新）",
-   "equity": 1000.43,
-   "pnl_pct": 0.043,
-   "pos": 0,
-   "cash": 1000.43,
-   "trades_n": 0,
-   "pending": 0,
-   "curve": [
-    1000.2149,
-    1000.3224,
-    1000.4299
-   ],
-   "held": [],
-   "last_sig": {
-    "BNBUSDT": false,
-    "BTCUSDT": false,
-    "OKBUSDT": false,
-    "XRPUSDT": false,
-    "SOLUSDT": false,
-    "DOGEUSDT": false,
-    "AVAXUSDT": false,
-    "TRXUSDT": false
-   },
-   "start": "2026-11-11",
-   "rule": "周线成交量 / 5 日均量 大于 1.5 → <b>持有</b>（放量确认）",
-   "params": "5, x1.5",
-   "bench": [
-    957.6353,
-    959.0937,
-    942.9101
-   ],
-   "rel_pct": 6.1
+   "rel_pct": 9.074
   },
   {
    "key": "S1_ATR_x1",
    "label": "日线 ATR×1.0",
-   "equity": 997.67,
-   "pnl_pct": -0.233,
-   "pos": 0.2485,
-   "cash": 749.78,
+   "equity": 994.44,
+   "pnl_pct": -0.556,
+   "pos": 0.246,
+   "cash": 749.86,
    "trades_n": 4,
    "pending": 0,
    "curve": [
@@ -914,7 +930,8 @@
     998.6346,
     998.4853,
     1000.3036,
-    997.6704
+    997.6704,
+    994.4396
    ],
    "held": [
     "AVAXUSDT",
@@ -941,55 +958,18 @@
     978.5253,
     957.6353,
     959.0937,
-    942.9101
+    942.9101,
+    913.0266
    ],
-   "rel_pct": 5.808
-  },
-  {
-   "key": "M4_chandelier_w",
-   "label": "吊灯22x2.0（w·新）",
-   "equity": 991.08,
-   "pnl_pct": -0.892,
-   "pos": 0.2432,
-   "cash": 750.1,
-   "trades_n": 2,
-   "pending": 0,
-   "curve": [
-    999.1903,
-    999.4908,
-    991.0829
-   ],
-   "held": [
-    "BNBUSDT",
-    "BTCUSDT"
-   ],
-   "last_sig": {
-    "BNBUSDT": true,
-    "BTCUSDT": true,
-    "OKBUSDT": false,
-    "XRPUSDT": false,
-    "SOLUSDT": false,
-    "DOGEUSDT": false,
-    "AVAXUSDT": false,
-    "TRXUSDT": false
-   },
-   "start": "2026-11-11",
-   "rule": "周线吊灯止损：22 日最高 减 2.0xATR → <b>持有</b>；否则空仓",
-   "params": "22, 2.0",
-   "bench": [
-    957.6353,
-    959.0937,
-    942.9101
-   ],
-   "rel_pct": 5.109
+   "rel_pct": 8.917
   },
   {
    "key": "S5_ATR_x15",
    "label": "日线 ATR×1.5",
-   "equity": 989.99,
-   "pnl_pct": -1.001,
-   "pos": 0.1165,
-   "cash": 874.61,
+   "equity": 985.43,
+   "pnl_pct": -1.457,
+   "pos": 0.1124,
+   "cash": 874.7,
    "trades_n": 5,
    "pending": 0,
    "curve": [
@@ -1000,7 +980,8 @@
     988.0072,
     988.9261,
     990.0473,
-    989.9877
+    989.9877,
+    985.4296
    ],
    "held": [
     "OKBUSDT"
@@ -1026,107 +1007,148 @@
     978.5253,
     957.6353,
     959.0937,
-    942.9101
+    942.9101,
+    913.0266
    ],
-   "rel_pct": 4.993
+   "rel_pct": 7.93
+  },
+  {
+   "key": "M4_chandelier_w",
+   "label": "吊灯22x2.0（w·新）",
+   "equity": 980.97,
+   "pnl_pct": -1.903,
+   "pos": 0.2353,
+   "cash": 750.18,
+   "trades_n": 2,
+   "pending": 0,
+   "curve": [
+    999.1903,
+    999.4908,
+    991.0829,
+    980.9687
+   ],
+   "held": [
+    "BNBUSDT",
+    "BTCUSDT"
+   ],
+   "last_sig": {
+    "BNBUSDT": true,
+    "BTCUSDT": true,
+    "OKBUSDT": false,
+    "XRPUSDT": false,
+    "SOLUSDT": false,
+    "DOGEUSDT": false,
+    "AVAXUSDT": false,
+    "TRXUSDT": false
+   },
+   "start": "2026-11-11",
+   "rule": "周线吊灯止损：22 日最高 减 2.0xATR → <b>持有</b>；否则空仓",
+   "params": "22, 2.0",
+   "bench": [
+    957.6353,
+    959.0937,
+    942.9101,
+    913.0266
+   ],
+   "rel_pct": 7.441
   }
  ],
  "coin_rows": [
   {
    "sym": "BNBUSDT",
-   "last": 656.97,
-   "date": "2026-11-12",
-   "d1": -3.352653877839229,
-   "d7": -4.74830365945601,
-   "d30": -11.42614463679016,
+   "last": 630.31,
+   "date": "2026-11-13",
+   "d1": -4.058023958476042,
+   "d7": -9.134026266091944,
+   "d30": -13.722349978098991,
    "n_sig": 2,
    "in_paper": true,
-   "rt_last": 654.05,
-   "rt_d24": -3.707
+   "rt_last": 631.24,
+   "rt_d24": -3.642
   },
   {
    "sym": "BTCUSDT",
-   "last": 71460.0,
-   "date": "2026-11-12",
-   "d1": -3.452250815001623,
-   "d7": -6.082443212800537,
-   "d30": -14.078562926090255,
+   "last": 68314.0,
+   "date": "2026-11-13",
+   "d1": -4.402462916316818,
+   "d7": -9.928273825220192,
+   "d30": -16.365917048319446,
    "n_sig": 2,
    "in_paper": true,
-   "rt_last": 70932.29,
-   "rt_d24": -3.792
+   "rt_last": 68317.47,
+   "rt_d24": -3.841
   },
   {
    "sym": "OKBUSDT",
-   "last": 97.72,
-   "date": "2026-11-12",
-   "d1": -0.13285641287684724,
-   "d7": -7.418285172903838,
-   "d30": -20.313137079018183,
+   "last": 93.78,
+   "date": "2026-11-13",
+   "d1": -4.031927957429393,
+   "d7": -10.897862232779099,
+   "d30": -23.244393517760685,
    "n_sig": 3,
    "in_paper": true,
-   "rt_last": 97.49,
-   "rt_d24": 0.29
+   "rt_last": 93.76,
+   "rt_d24": -3.69
   },
   {
    "sym": "XRPUSDT",
-   "last": 1.0413,
-   "date": "2026-11-12",
-   "d1": -1.0547320410490446,
-   "d7": -13.742544731610352,
-   "d30": -23.775711880535845,
+   "last": 1.011,
+   "date": "2026-11-13",
+   "d1": -2.90982425813886,
+   "d7": -14.249363867684494,
+   "d30": -24.076299188945626,
    "n_sig": 0,
    "in_paper": true,
-   "rt_last": 1.0317,
-   "rt_d24": -1.762
+   "rt_last": 1.008,
+   "rt_d24": -2.335
   },
   {
    "sym": "SOLUSDT",
-   "last": 81.72,
-   "date": "2026-11-12",
-   "d1": -1.8731988472622474,
-   "d7": -8.518974588604056,
-   "d30": -23.504633529907327,
+   "last": 78.19,
+   "date": "2026-11-13",
+   "d1": -4.3196279980420975,
+   "d7": -13.24753134361477,
+   "d30": -25.02636877936524,
    "n_sig": 0,
    "in_paper": true,
-   "rt_last": 81.3,
-   "rt_d24": -2.378
+   "rt_last": 77.41,
+   "rt_d24": -5.03
   },
   {
    "sym": "DOGEUSDT",
-   "last": 0.06651,
-   "date": "2026-11-12",
-   "d1": -1.4812620352540384,
-   "d7": -6.547702683715039,
-   "d30": -21.187344472093862,
+   "last": 0.06454,
+   "date": "2026-11-13",
+   "d1": -2.9619606074274496,
+   "d7": -10.893276266740292,
+   "d30": -21.158074761788427,
    "n_sig": 0,
    "in_paper": true,
-   "rt_last": 0.06631,
-   "rt_d24": -1.398
+   "rt_last": 0.06442,
+   "rt_d24": -2.923
   },
   {
    "sym": "AVAXUSDT",
-   "last": 8.363,
-   "date": "2026-11-12",
-   "d1": -1.773549447968048,
-   "d7": 2.312209444580371,
-   "d30": -18.234258897145097,
+   "last": 8.235,
+   "date": "2026-11-13",
+   "d1": -1.5305512375941688,
+   "d7": -1.2944983818770295,
+   "d30": -17.78975741239892,
    "n_sig": 2,
    "in_paper": true,
-   "rt_last": 8.367,
-   "rt_d24": -1.669
+   "rt_last": 8.205,
+   "rt_d24": -2.077
   },
   {
    "sym": "TRXUSDT",
-   "last": 0.3158,
-   "date": "2026-11-12",
-   "d1": -0.3785488958990446,
-   "d7": -0.8165829145728609,
-   "d30": -3.5430665852168586,
+   "last": 0.3122,
+   "date": "2026-11-13",
+   "d1": -1.1399620012666367,
+   "d7": -1.91643103989948,
+   "d30": -6.105263157894747,
    "n_sig": 1,
    "in_paper": true,
-   "rt_last": 0.3156,
-   "rt_d24": -0.442
+   "rt_last": 0.312,
+   "rt_d24": -1.172
   }
  ],
  "trades": [
@@ -1258,14 +1280,14 @@
    "base_oos_ann_pct": 15.99,
    "base_oos_mdd_pct": -29.66,
    "base_full_ann_pct": 67.68,
-   "actual_ann_pct": -7.64,
-   "actual_ret_pct": -0.15,
-   "actual_mdd_pct": -0.26,
-   "days": 8,
-   "gap_pp": -23.6,
+   "actual_ann_pct": -19.55,
+   "actual_ret_pct": -0.48,
+   "actual_mdd_pct": -0.59,
+   "days": 9,
+   "gap_pp": -35.5,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 8 天（<30），不下结论"
+   "note": "纸面仅 9 天（<30），不下结论"
   },
   {
    "key": "S2_MACD2652",
@@ -1273,14 +1295,14 @@
    "base_oos_ann_pct": 9.94,
    "base_oos_mdd_pct": -22.76,
    "base_full_ann_pct": 65.08,
-   "actual_ann_pct": 6.96,
-   "actual_ret_pct": 0.13,
+   "actual_ann_pct": 6.59,
+   "actual_ret_pct": 0.14,
    "actual_mdd_pct": 0.0,
-   "days": 8,
-   "gap_pp": -3.0,
+   "days": 9,
+   "gap_pp": -3.3,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 8 天（<30），不下结论"
+   "note": "纸面仅 9 天（<30），不下结论"
   },
   {
    "key": "S3_MACD5_10_5",
@@ -1288,11 +1310,11 @@
    "base_oos_ann_pct": -2.41,
    "base_oos_mdd_pct": -41.33,
    "base_full_ann_pct": 54.96,
-   "actual_ann_pct": 6.96,
-   "actual_ret_pct": 0.13,
+   "actual_ann_pct": 6.59,
+   "actual_ret_pct": 0.14,
    "actual_mdd_pct": 0.0,
-   "days": 8,
-   "gap_pp": 9.4,
+   "days": 9,
+   "gap_pp": 9.0,
    "decay_ratio_pct": null,
    "status": "预期为负",
    "note": "回测预期年化只有 -2.4%，本来就没什么期望值 —— 这条策略优先级最低"
@@ -1303,14 +1325,14 @@
    "base_oos_ann_pct": 0.01,
    "base_oos_mdd_pct": -32.5,
    "base_full_ann_pct": 44.63,
-   "actual_ann_pct": 6.96,
-   "actual_ret_pct": 0.13,
+   "actual_ann_pct": 6.59,
+   "actual_ret_pct": 0.14,
    "actual_mdd_pct": 0.0,
-   "days": 8,
-   "gap_pp": 7.0,
+   "days": 9,
+   "gap_pp": 6.6,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 8 天（<30），不下结论"
+   "note": "纸面仅 9 天（<30），不下结论"
   },
   {
    "key": "S5_ATR_x15",
@@ -1318,14 +1340,14 @@
    "base_oos_ann_pct": 4.11,
    "base_oos_mdd_pct": -33.68,
    "base_full_ann_pct": 47.81,
-   "actual_ann_pct": -36.62,
-   "actual_ret_pct": -0.87,
-   "actual_mdd_pct": -1.22,
-   "days": 8,
-   "gap_pp": -40.7,
+   "actual_ann_pct": -45.65,
+   "actual_ret_pct": -1.33,
+   "actual_mdd_pct": -1.48,
+   "days": 9,
+   "gap_pp": -49.8,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 8 天（<30），不下结论"
+   "note": "纸面仅 9 天（<30），不下结论"
   },
   {
    "key": "M1_cci_w",
@@ -1333,14 +1355,14 @@
    "base_oos_ann_pct": 86.62,
    "base_oos_mdd_pct": -10.43,
    "base_full_ann_pct": 187.42,
-   "actual_ann_pct": 8.17,
-   "actual_ret_pct": 0.06,
+   "actual_ann_pct": 7.11,
+   "actual_ret_pct": 0.08,
    "actual_mdd_pct": 0.0,
-   "days": 4,
-   "gap_pp": -78.5,
+   "days": 5,
+   "gap_pp": -79.5,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 4 天（<30），不下结论"
+   "note": "纸面仅 5 天（<30），不下结论"
   },
   {
    "key": "M2_stoch_w",
@@ -1348,14 +1370,14 @@
    "base_oos_ann_pct": 83.29,
    "base_oos_mdd_pct": -14.42,
    "base_full_ann_pct": 170.3,
-   "actual_ann_pct": 8.17,
-   "actual_ret_pct": 0.06,
+   "actual_ann_pct": 7.11,
+   "actual_ret_pct": 0.08,
    "actual_mdd_pct": 0.0,
-   "days": 4,
-   "gap_pp": -75.1,
+   "days": 5,
+   "gap_pp": -76.2,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 4 天（<30），不下结论"
+   "note": "纸面仅 5 天（<30），不下结论"
   },
   {
    "key": "M3_roc_w",
@@ -1363,14 +1385,14 @@
    "base_oos_ann_pct": 53.82,
    "base_oos_mdd_pct": -15.0,
    "base_full_ann_pct": 104.58,
-   "actual_ann_pct": 8.17,
-   "actual_ret_pct": 0.06,
+   "actual_ann_pct": 7.11,
+   "actual_ret_pct": 0.08,
    "actual_mdd_pct": 0.0,
-   "days": 4,
-   "gap_pp": -45.6,
+   "days": 5,
+   "gap_pp": -46.7,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 4 天（<30），不下结论"
+   "note": "纸面仅 5 天（<30），不下结论"
   },
   {
    "key": "M4_chandelier_w",
@@ -1378,14 +1400,14 @@
    "base_oos_ann_pct": 47.17,
    "base_oos_mdd_pct": -14.49,
    "base_full_ann_pct": 142.43,
-   "actual_ann_pct": -77.41,
-   "actual_ret_pct": -0.81,
-   "actual_mdd_pct": -0.84,
-   "days": 3,
-   "gap_pp": -124.6,
+   "actual_ann_pct": -89.36,
+   "actual_ret_pct": -1.82,
+   "actual_mdd_pct": -1.85,
+   "days": 4,
+   "gap_pp": -136.5,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 3 天（<30），不下结论"
+   "note": "纸面仅 4 天（<30），不下结论"
   },
   {
    "key": "M5_vol_ratio_w",
@@ -1394,13 +1416,13 @@
    "base_oos_mdd_pct": -30.72,
    "base_full_ann_pct": 67.95,
    "actual_ann_pct": 4.0,
-   "actual_ret_pct": 0.02,
+   "actual_ret_pct": 0.03,
    "actual_mdd_pct": 0.0,
-   "days": 3,
+   "days": 4,
    "gap_pp": -35.2,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 3 天（<30），不下结论"
+   "note": "纸面仅 4 天（<30），不下结论"
   },
   {
    "key": "M6_liq_trend_w",
@@ -1408,14 +1430,14 @@
    "base_oos_ann_pct": 24.08,
    "base_oos_mdd_pct": -20.32,
    "base_full_ann_pct": 56.98,
-   "actual_ann_pct": 23.12,
-   "actual_ret_pct": 0.11,
-   "actual_mdd_pct": -0.01,
-   "days": 3,
-   "gap_pp": -1.0,
+   "actual_ann_pct": -37.33,
+   "actual_ret_pct": -0.38,
+   "actual_mdd_pct": -0.5,
+   "days": 4,
+   "gap_pp": -61.4,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 3 天（<30），不下结论"
+   "note": "纸面仅 4 天（<30），不下结论"
   }
  ],
  "benchmark": {
@@ -1436,14 +1458,14 @@
   "预期为负": 1
  },
  "summary": {
-  "avg_pnl": -0.12,
+  "avg_pnl": -0.321,
   "with_pos": 4,
   "n_strategies": 11,
-  "btc_d7": -6.082443212800537,
-  "btc_d30": -14.078562926090255,
-  "btc_last": 71460.0,
-  "btc_rt_last": 70932.29,
-  "btc_rt_d24": -3.792,
+  "btc_d7": -9.928273825220192,
+  "btc_d30": -16.365917048319446,
+  "btc_last": 68314.0,
+  "btc_rt_last": 68317.47,
+  "btc_rt_d24": -3.841,
   "paper_coins": 8
  },
  "public": false,
