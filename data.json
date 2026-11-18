@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17 20:20:03",
+ "generated_at": "2026-11-18 17:28:31",
  "signal_updated": "2026-11-17T09:53:50.330604",
  "latest_bar": "2026-11-16",
  "coins": [
@@ -1134,8 +1134,8 @@
    "d30": -17.658282499094724,
    "n_sig": 0,
    "in_paper": true,
-   "rt_last": 593.19,
-   "rt_d24": 1.086
+   "rt_last": 592.31,
+   "rt_d24": 0.3
   },
   {
    "sym": "BTCUSDT",
@@ -1146,8 +1146,8 @@
    "d30": -20.380363289019254,
    "n_sig": 0,
    "in_paper": true,
-   "rt_last": 64888.42,
-   "rt_d24": 1.353
+   "rt_last": 64669.74,
+   "rt_d24": 0.485
   },
   {
    "sym": "OKBUSDT",
@@ -1158,8 +1158,8 @@
    "d30": -25.679205851619646,
    "n_sig": 0,
    "in_paper": true,
-   "rt_last": 86.91,
-   "rt_d24": 3.57
+   "rt_last": 86.75,
+   "rt_d24": -0.02
   },
   {
    "sym": "XRPUSDT",
@@ -1170,8 +1170,8 @@
    "d30": -26.18035700486825,
    "n_sig": 0,
    "in_paper": true,
-   "rt_last": 0.9687,
-   "rt_d24": 2.151
+   "rt_last": 0.9981,
+   "rt_d24": 4.645
   },
   {
    "sym": "SOLUSDT",
@@ -1182,8 +1182,8 @@
    "d30": -30.820527689185273,
    "n_sig": 0,
    "in_paper": true,
-   "rt_last": 73.23,
-   "rt_d24": 3.535
+   "rt_last": 74.82,
+   "rt_d24": 3.471
   },
   {
    "sym": "DOGEUSDT",
@@ -1194,8 +1194,8 @@
    "d30": -25.752803326193764,
    "n_sig": 0,
    "in_paper": true,
-   "rt_last": 0.05923,
-   "rt_d24": 1.63
+   "rt_last": 0.05975,
+   "rt_d24": 2.154
   },
   {
    "sym": "AVAXUSDT",
@@ -1206,8 +1206,8 @@
    "d30": -27.10146411385277,
    "n_sig": 1,
    "in_paper": true,
-   "rt_last": 7.209,
-   "rt_d24": 1.908
+   "rt_last": 7.169,
+   "rt_d24": 0.491
   },
   {
    "sym": "TRXUSDT",
@@ -1218,8 +1218,8 @@
    "d30": -8.540605334132445,
    "n_sig": 1,
    "in_paper": true,
-   "rt_last": 0.3057,
-   "rt_d24": 0.526
+   "rt_last": 0.3088,
+   "rt_d24": 0.882
   }
  ],
  "trades": [
@@ -1394,7 +1394,7 @@
    "key": "S4_MA2_6",
    "name": "周线 MA2/6",
    "base_oos_ann_pct": 0.01,
-   "base_oos_mdd_pct": -32.5,
+   "base_oos_mdd_pct": -32.51,
    "base_full_ann_pct": 44.63,
    "actual_ann_pct": 5.87,
    "actual_ret_pct": 0.17,
@@ -1423,14 +1423,14 @@
   {
    "key": "M1_cci_w",
    "name": "CCI9>100（w·新）",
-   "base_oos_ann_pct": 86.62,
+   "base_oos_ann_pct": 86.61,
    "base_oos_mdd_pct": -10.43,
-   "base_full_ann_pct": 187.42,
+   "base_full_ann_pct": 187.41,
    "actual_ann_pct": 5.77,
    "actual_ret_pct": 0.11,
    "actual_mdd_pct": 0.0,
    "days": 8,
-   "gap_pp": -80.9,
+   "gap_pp": -80.8,
    "decay_ratio_pct": null,
    "status": "样本不足",
    "note": "纸面仅 8 天（<30），不下结论"
@@ -1440,7 +1440,7 @@
    "name": "随机%K14>70（w·新）",
    "base_oos_ann_pct": 83.29,
    "base_oos_mdd_pct": -14.42,
-   "base_full_ann_pct": 170.3,
+   "base_full_ann_pct": 170.29,
    "actual_ann_pct": 5.77,
    "actual_ret_pct": 0.11,
    "actual_mdd_pct": 0.0,
@@ -1455,7 +1455,7 @@
    "name": "ROC10>20%（w·新）",
    "base_oos_ann_pct": 53.82,
    "base_oos_mdd_pct": -15.0,
-   "base_full_ann_pct": 104.58,
+   "base_full_ann_pct": 104.57,
    "actual_ann_pct": 5.77,
    "actual_ret_pct": 0.11,
    "actual_mdd_pct": 0.0,
@@ -1470,7 +1470,7 @@
    "name": "吊灯22x2.0（w·新）",
    "base_oos_ann_pct": 47.17,
    "base_oos_mdd_pct": -14.49,
-   "base_full_ann_pct": 142.43,
+   "base_full_ann_pct": 142.42,
    "actual_ann_pct": -86.04,
    "actual_ret_pct": -3.18,
    "actual_mdd_pct": -3.44,
@@ -1483,14 +1483,14 @@
   {
    "key": "M5_vol_ratio_w",
    "name": "量比5>1.5（w·新）",
-   "base_oos_ann_pct": 39.24,
+   "base_oos_ann_pct": 39.23,
    "base_oos_mdd_pct": -30.72,
    "base_full_ann_pct": 67.95,
    "actual_ann_pct": 0.89,
    "actual_ret_pct": 0.01,
    "actual_mdd_pct": -0.04,
    "days": 7,
-   "gap_pp": -38.4,
+   "gap_pp": -38.3,
    "decay_ratio_pct": null,
    "status": "样本不足",
    "note": "纸面仅 7 天（<30），不下结论"
@@ -1498,7 +1498,7 @@
   {
    "key": "M6_liq_trend_w",
    "name": "流动性5/20>30%（w·新）",
-   "base_oos_ann_pct": 24.08,
+   "base_oos_ann_pct": 24.07,
    "base_oos_mdd_pct": -20.32,
    "base_full_ann_pct": 56.98,
    "actual_ann_pct": -59.71,
@@ -1535,8 +1535,8 @@
   "btc_d7": -13.912380531843516,
   "btc_d30": -20.380363289019254,
   "btc_last": 64882.87,
-  "btc_rt_last": 64888.42,
-  "btc_rt_d24": 1.353,
+  "btc_rt_last": 64669.74,
+  "btc_rt_d24": 0.485,
   "paper_coins": 8
  },
  "public": false,
