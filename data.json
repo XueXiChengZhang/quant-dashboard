@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-20 09:35:21",
- "signal_updated": "2026-11-20T09:05:30.237525",
- "latest_bar": "2026-11-19",
+ "generated_at": "2026-11-21 09:38:26",
+ "signal_updated": "2026-11-21T09:05:48.392541",
+ "latest_bar": "2026-11-20",
  "coins": [
   "BNBUSDT",
   "BTCUSDT",
@@ -21,42 +21,42 @@
     "BNBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 42
+     "weeks_in": 43
     },
     "BTCUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 14
+     "weeks_in": 15
     },
     "OKBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 42
+     "weeks_in": 43
     },
     "XRPUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 43
+     "weeks_in": 44
     },
     "SOLUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 42
+     "weeks_in": 43
     },
     "DOGEUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 57
+     "weeks_in": 58
     },
     "AVAXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 5
+     "weeks_in": 6
     },
     "TRXUSDT": {
      "on": true,
      "changed": false,
-     "weeks_in": 18
+     "weeks_in": 19
     }
    }
   },
@@ -68,42 +68,42 @@
     "BNBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 51
+     "weeks_in": 52
     },
     "BTCUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 43
+     "weeks_in": 44
     },
     "OKBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 38
+     "weeks_in": 39
     },
     "XRPUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 48
+     "weeks_in": 49
     },
     "SOLUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 43
+     "weeks_in": 44
     },
     "DOGEUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 43
+     "weeks_in": 44
     },
     "AVAXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 41
+     "weeks_in": 42
     },
     "TRXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 19
+     "weeks_in": 20
     }
    }
   },
@@ -115,42 +115,42 @@
     "BNBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 39
+     "weeks_in": 40
     },
     "BTCUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 32
+     "weeks_in": 33
     },
     "OKBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 32
+     "weeks_in": 33
     },
     "XRPUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 39
+     "weeks_in": 40
     },
     "SOLUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 32
+     "weeks_in": 33
     },
     "DOGEUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 32
+     "weeks_in": 33
     },
     "AVAXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 32
+     "weeks_in": 33
     },
     "TRXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 53
+     "weeks_in": 54
     }
    }
   },
@@ -162,42 +162,42 @@
     "BNBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 32
+     "weeks_in": 33
     },
     "BTCUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 25
+     "weeks_in": 26
     },
     "OKBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 25
+     "weeks_in": 26
     },
     "XRPUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 32
+     "weeks_in": 33
     },
     "SOLUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 32
+     "weeks_in": 33
     },
     "DOGEUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 32
+     "weeks_in": 33
     },
     "AVAXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 25
+     "weeks_in": 26
     },
     "TRXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 53
+     "weeks_in": 54
     }
    }
   },
@@ -209,42 +209,42 @@
     "BNBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 42
+     "weeks_in": 43
     },
     "BTCUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 14
+     "weeks_in": 15
     },
     "OKBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 5
+     "weeks_in": 6
     },
     "XRPUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 21
+     "weeks_in": 22
     },
     "SOLUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 21
+     "weeks_in": 22
     },
     "DOGEUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 14
+     "weeks_in": 15
     },
     "AVAXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 57
+     "weeks_in": 58
     },
     "TRXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 20
+     "weeks_in": 21
     }
    }
   },
@@ -256,42 +256,42 @@
     "BNBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 60
+     "weeks_in": 61
     },
     "BTCUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 46
+     "weeks_in": 47
     },
     "OKBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 39
+     "weeks_in": 40
     },
     "XRPUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 81
+     "weeks_in": 82
     },
     "SOLUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 46
+     "weeks_in": 47
     },
     "DOGEUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 53
+     "weeks_in": 54
     },
     "AVAXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 53
+     "weeks_in": 54
     },
     "TRXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 60
+     "weeks_in": 61
     }
    }
   },
@@ -303,42 +303,42 @@
     "BNBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 25
+     "weeks_in": 26
     },
     "BTCUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 25
+     "weeks_in": 26
     },
     "OKBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 32
+     "weeks_in": 33
     },
     "XRPUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 39
+     "weeks_in": 40
     },
     "SOLUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 39
+     "weeks_in": 40
     },
     "DOGEUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 46
+     "weeks_in": 47
     },
     "AVAXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 39
+     "weeks_in": 40
     },
     "TRXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 60
+     "weeks_in": 61
     }
    }
   },
@@ -350,42 +350,42 @@
     "BNBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 25
+     "weeks_in": 26
     },
     "BTCUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 25
+     "weeks_in": 26
     },
     "OKBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 32
+     "weeks_in": 33
     },
     "XRPUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 25
+     "weeks_in": 26
     },
     "SOLUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 25
+     "weeks_in": 26
     },
     "DOGEUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 39
+     "weeks_in": 40
     },
     "AVAXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 25
+     "weeks_in": 26
     },
     "TRXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 179
+     "weeks_in": 180
     }
    }
   },
@@ -397,42 +397,42 @@
     "BNBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 11
+     "weeks_in": 12
     },
     "BTCUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 11
+     "weeks_in": 12
     },
     "OKBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 39
+     "weeks_in": 40
     },
     "XRPUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 25
+     "weeks_in": 26
     },
     "SOLUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 25
+     "weeks_in": 26
     },
     "DOGEUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 18
+     "weeks_in": 19
     },
     "AVAXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 18
+     "weeks_in": 19
     },
     "TRXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 172
+     "weeks_in": 173
     }
    }
   },
@@ -444,42 +444,42 @@
     "BNBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 18
+     "weeks_in": 19
     },
     "BTCUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 88
+     "weeks_in": 89
     },
     "OKBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 39
+     "weeks_in": 40
     },
     "XRPUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 88
+     "weeks_in": 89
     },
     "SOLUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 81
+     "weeks_in": 82
     },
     "DOGEUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 53
+     "weeks_in": 54
     },
     "AVAXUSDT": {
      "on": true,
      "changed": false,
-     "weeks_in": 11
+     "weeks_in": 12
     },
     "TRXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 18
+     "weeks_in": 19
     }
    }
   },
@@ -491,42 +491,42 @@
     "BNBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 144
+     "weeks_in": 145
     },
     "BTCUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 375
+     "weeks_in": 376
     },
     "OKBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 11
+     "weeks_in": 12
     },
     "XRPUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 32
+     "weeks_in": 33
     },
     "SOLUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 39
+     "weeks_in": 40
     },
     "DOGEUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 25
+     "weeks_in": 26
     },
     "AVAXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 18
+     "weeks_in": 19
     },
     "TRXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 445
+     "weeks_in": 446
     }
    }
   },
@@ -538,42 +538,42 @@
     "BNBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 7
+     "weeks_in": 8
     },
     "BTCUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 7
+     "weeks_in": 8
     },
     "OKBUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 6
+     "weeks_in": 7
     },
     "XRPUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 14
+     "weeks_in": 15
     },
     "SOLUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 11
+     "weeks_in": 12
     },
     "DOGEUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 42
+     "weeks_in": 43
     },
     "AVAXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 5
+     "weeks_in": 6
     },
     "TRXUSDT": {
      "on": false,
      "changed": false,
-     "weeks_in": 20
+     "weeks_in": 21
     }
    }
   }
@@ -582,10 +582,10 @@
   {
    "key": "S2_MACD2652",
    "label": "日线 MACD26/52/9",
-   "equity": 1002.26,
-   "pnl_pct": 0.226,
+   "equity": 1002.37,
+   "pnl_pct": 0.237,
    "pos": 0,
-   "cash": 1002.26,
+   "cash": 1002.37,
    "trades_n": 0,
    "pending": 0,
    "curve": [
@@ -603,7 +603,8 @@
     1001.936,
     1002.0436,
     1002.1512,
-    1002.2589
+    1002.2589,
+    1002.3665
    ],
    "held": [],
    "last_sig": {
@@ -635,17 +636,18 @@
     846.5436,
     864.1696,
     848.6479,
-    841.8743
+    841.8743,
+    792.7553
    ],
-   "rel_pct": 19.051
+   "rel_pct": 26.441
   },
   {
    "key": "S3_MACD5_10_5",
    "label": "周线 MACD5/10/5",
-   "equity": 1002.26,
-   "pnl_pct": 0.226,
+   "equity": 1002.37,
+   "pnl_pct": 0.237,
    "pos": 0,
-   "cash": 1002.26,
+   "cash": 1002.37,
    "trades_n": 0,
    "pending": 0,
    "curve": [
@@ -663,7 +665,8 @@
     1001.936,
     1002.0436,
     1002.1512,
-    1002.2589
+    1002.2589,
+    1002.3665
    ],
    "held": [],
    "last_sig": {
@@ -695,17 +698,18 @@
     846.5436,
     864.1696,
     848.6479,
-    841.8743
+    841.8743,
+    792.7553
    ],
-   "rel_pct": 19.051
+   "rel_pct": 26.441
   },
   {
    "key": "S4_MA2_6",
    "label": "周线 MA2/6",
-   "equity": 1002.26,
-   "pnl_pct": 0.226,
+   "equity": 1002.37,
+   "pnl_pct": 0.237,
    "pos": 0,
-   "cash": 1002.26,
+   "cash": 1002.37,
    "trades_n": 0,
    "pending": 0,
    "curve": [
@@ -723,7 +727,8 @@
     1001.936,
     1002.0436,
     1002.1512,
-    1002.2589
+    1002.2589,
+    1002.3665
    ],
    "held": [],
    "last_sig": {
@@ -755,17 +760,18 @@
     846.5436,
     864.1696,
     848.6479,
-    841.8743
+    841.8743,
+    792.7553
    ],
-   "rel_pct": 19.051
+   "rel_pct": 26.441
   },
   {
    "key": "M1_cci_w",
    "label": "CCI9>100（w·新）",
-   "equity": 1001.51,
-   "pnl_pct": 0.151,
+   "equity": 1001.61,
+   "pnl_pct": 0.161,
    "pos": 0,
-   "cash": 1001.51,
+   "cash": 1001.61,
    "trades_n": 0,
    "pending": 0,
    "curve": [
@@ -779,7 +785,8 @@
     1001.1827,
     1001.2902,
     1001.3977,
-    1001.5053
+    1001.5053,
+    1001.6128
    ],
    "held": [],
    "last_sig": {
@@ -807,17 +814,18 @@
     865.029,
     883.0398,
     867.1792,
-    860.2577
+    860.2577,
+    810.0661
    ],
-   "rel_pct": 16.419
+   "rel_pct": 23.646
   },
   {
    "key": "M2_stoch_w",
    "label": "随机%K14>70（w·新）",
-   "equity": 1001.51,
-   "pnl_pct": 0.151,
+   "equity": 1001.61,
+   "pnl_pct": 0.161,
    "pos": 0,
-   "cash": 1001.51,
+   "cash": 1001.61,
    "trades_n": 0,
    "pending": 0,
    "curve": [
@@ -831,7 +839,8 @@
     1001.1827,
     1001.2902,
     1001.3977,
-    1001.5053
+    1001.5053,
+    1001.6128
    ],
    "held": [],
    "last_sig": {
@@ -859,17 +868,18 @@
     865.029,
     883.0398,
     867.1792,
-    860.2577
+    860.2577,
+    810.0661
    ],
-   "rel_pct": 16.419
+   "rel_pct": 23.646
   },
   {
    "key": "M3_roc_w",
    "label": "ROC10>20%（w·新）",
-   "equity": 1001.51,
-   "pnl_pct": 0.151,
+   "equity": 1001.61,
+   "pnl_pct": 0.161,
    "pos": 0,
-   "cash": 1001.51,
+   "cash": 1001.61,
    "trades_n": 0,
    "pending": 0,
    "curve": [
@@ -883,7 +893,8 @@
     1001.1827,
     1001.2902,
     1001.3977,
-    1001.5053
+    1001.5053,
+    1001.6128
    ],
    "held": [],
    "last_sig": {
@@ -911,17 +922,80 @@
     865.029,
     883.0398,
     867.1792,
-    860.2577
+    860.2577,
+    810.0661
    ],
-   "rel_pct": 16.419
+   "rel_pct": 23.646
+  },
+  {
+   "key": "S5_ATR_x15",
+   "label": "日线 ATR×1.5",
+   "equity": 975.77,
+   "pnl_pct": -2.423,
+   "pos": 0,
+   "cash": 975.77,
+   "trades_n": 6,
+   "pending": 0,
+   "curve": [
+    998.678,
+    1000.1976,
+    994.1846,
+    991.6691,
+    988.0072,
+    988.9261,
+    990.0473,
+    989.9877,
+    985.4296,
+    975.3339,
+    979.6904,
+    975.3553,
+    975.46,
+    975.5648,
+    975.6696,
+    975.7743
+   ],
+   "held": [],
+   "last_sig": {
+    "BNBUSDT": false,
+    "BTCUSDT": false,
+    "OKBUSDT": false,
+    "XRPUSDT": false,
+    "SOLUSDT": false,
+    "DOGEUSDT": false,
+    "AVAXUSDT": false,
+    "TRXUSDT": false
+   },
+   "start": "2026-11-06",
+   "gran": "d",
+   "rule": "日线收盘价创 14 日新高 → <b>持有</b>；创 14 日新低 → <b>空仓</b>",
+   "params": "ATR 14, x1.5",
+   "bench": [
+    998.678,
+    1001.5915,
+    993.976,
+    968.2955,
+    977.2317,
+    956.3693,
+    957.8258,
+    941.6636,
+    911.8195,
+    832.9442,
+    859.5471,
+    845.2428,
+    862.8417,
+    847.3439,
+    840.5807,
+    791.5372
+   ],
+   "rel_pct": 23.276
   },
   {
    "key": "S1_ATR_x1",
    "label": "日线 ATR×1.0",
-   "equity": 977.26,
-   "pnl_pct": -2.274,
-   "pos": 0.1243,
-   "cash": 855.76,
+   "equity": 974.14,
+   "pnl_pct": -2.586,
+   "pos": 0.1214,
+   "cash": 855.86,
    "trades_n": 5,
    "pending": 0,
    "curve": [
@@ -939,7 +1013,8 @@
     974.948,
     976.175,
     976.8931,
-    977.259
+    977.259,
+    974.1413
    ],
    "held": [
     "TRXUSDT"
@@ -973,77 +1048,18 @@
     845.6764,
     863.2844,
     847.7785,
-    841.0119
+    841.0119,
+    791.9432
    ],
-   "rel_pct": 16.2
-  },
-  {
-   "key": "S5_ATR_x15",
-   "label": "日线 ATR×1.5",
-   "equity": 975.67,
-   "pnl_pct": -2.433,
-   "pos": 0,
-   "cash": 975.67,
-   "trades_n": 6,
-   "pending": 0,
-   "curve": [
-    998.678,
-    1000.1976,
-    994.1846,
-    991.6691,
-    988.0072,
-    988.9261,
-    990.0473,
-    989.9877,
-    985.4296,
-    975.3339,
-    979.6904,
-    975.3553,
-    975.46,
-    975.5648,
-    975.6696
-   ],
-   "held": [],
-   "last_sig": {
-    "BNBUSDT": false,
-    "BTCUSDT": false,
-    "OKBUSDT": false,
-    "XRPUSDT": false,
-    "SOLUSDT": false,
-    "DOGEUSDT": false,
-    "AVAXUSDT": false,
-    "TRXUSDT": false
-   },
-   "start": "2026-11-06",
-   "gran": "d",
-   "rule": "日线收盘价创 14 日新高 → <b>持有</b>；创 14 日新低 → <b>空仓</b>",
-   "params": "ATR 14, x1.5",
-   "bench": [
-    998.678,
-    1001.5915,
-    993.976,
-    968.2955,
-    977.2317,
-    956.3693,
-    957.8258,
-    941.6636,
-    911.8195,
-    832.9442,
-    859.5471,
-    845.2428,
-    862.8417,
-    847.3439,
-    840.5807
-   ],
-   "rel_pct": 16.071
+   "rel_pct": 23.006
   },
   {
    "key": "M5_vol_ratio_w",
    "label": "量比5>1.5（w·新）",
-   "equity": 998.42,
-   "pnl_pct": -0.158,
-   "pos": 0.1227,
-   "cash": 875.91,
+   "equity": 990.24,
+   "pnl_pct": -0.976,
+   "pos": 0.1154,
+   "cash": 876.0,
    "trades_n": 1,
    "pending": 0,
    "curve": [
@@ -1056,7 +1072,8 @@
     1000.3607,
     1003.5906,
     999.0246,
-    998.4179
+    998.4179,
+    990.2432
    ],
    "held": [
     "AVAXUSDT"
@@ -1085,17 +1102,18 @@
     883.9938,
     902.3995,
     886.1911,
-    879.1179
+    879.1179,
+    827.8259
    ],
-   "rel_pct": 13.57
+   "rel_pct": 19.62
   },
   {
    "key": "M6_liq_trend_w",
    "label": "流动性5/20>30%（w·新）",
-   "equity": 985.2,
-   "pnl_pct": -1.48,
+   "equity": 985.31,
+   "pnl_pct": -1.469,
    "pos": 0,
-   "cash": 985.2,
+   "cash": 985.31,
    "trades_n": 2,
    "pending": 0,
    "curve": [
@@ -1108,7 +1126,8 @@
     984.8832,
     984.989,
     985.0947,
-    985.2005
+    985.2005,
+    985.3063
    ],
    "held": [],
    "last_sig": {
@@ -1135,17 +1154,18 @@
     883.541,
     901.9373,
     885.7372,
-    878.6676
+    878.6676,
+    827.4019
    ],
-   "rel_pct": 12.124
+   "rel_pct": 19.084
   },
   {
    "key": "M4_chandelier_w",
    "label": "吊灯22x2.0（w·新）",
-   "equity": 967.7,
-   "pnl_pct": -3.23,
+   "equity": 967.8,
+   "pnl_pct": -3.22,
    "pos": 0,
-   "cash": 967.7,
+   "cash": 967.8,
    "trades_n": 4,
    "pending": 0,
    "curve": [
@@ -1158,7 +1178,8 @@
     967.3892,
     967.4931,
     967.597,
-    967.7009
+    967.7009,
+    967.8048
    ],
    "held": [],
    "last_sig": {
@@ -1185,107 +1206,108 @@
     883.0882,
     901.4751,
     885.2833,
-    878.2173
+    878.2173,
+    826.9779
    ],
-   "rel_pct": 10.189
+   "rel_pct": 17.029
   }
  ],
  "coin_rows": [
   {
    "sym": "BNBUSDT",
-   "last": 580.25,
-   "date": "2026-11-19",
-   "d1": -0.4221653995984398,
-   "d7": -11.677854392133591,
-   "d30": -21.76650622227616,
+   "last": 540.84,
+   "date": "2026-11-20",
+   "d1": -6.791900043084875,
+   "d7": -14.194602655836007,
+   "d30": -27.531454757406426,
    "n_sig": 0,
    "in_paper": true,
-   "rt_last": 579.68,
-   "rt_d24": 0.067
+   "rt_last": 539.6,
+   "rt_d24": -6.766
   },
   {
    "sym": "BTCUSDT",
-   "last": 61986.73,
-   "date": "2026-11-19",
-   "d1": -1.7147939168094428,
-   "d7": -13.256745032185835,
-   "d30": -25.342513352399145,
+   "last": 58951.51,
+   "date": "2026-11-20",
+   "d1": -4.896564151714411,
+   "d7": -13.705082413560909,
+   "d30": -29.89759484154646,
    "n_sig": 0,
    "in_paper": true,
-   "rt_last": 62334.01,
-   "rt_d24": -0.23
+   "rt_last": 58986.93,
+   "rt_d24": -5.117
   },
   {
    "sym": "OKBUSDT",
-   "last": 85.74,
-   "date": "2026-11-19",
-   "d1": -1.5501205649328331,
-   "d7": -12.259516987310693,
-   "d30": -25.740516196085228,
+   "last": 78.89,
+   "date": "2026-11-20",
+   "d1": -7.989269885700945,
+   "d7": -15.877585839198128,
+   "d30": -31.991379310344826,
    "n_sig": 0,
    "in_paper": true,
-   "rt_last": 85.76,
-   "rt_d24": -1.66
+   "rt_last": 78.61,
+   "rt_d24": -8.02
   },
   {
    "sym": "XRPUSDT",
-   "last": 0.9604,
-   "date": "2026-11-19",
-   "d1": -0.7543660225276416,
-   "d7": -7.769134735426853,
-   "d30": -28.103009432549786,
+   "last": 0.9107,
+   "date": "2026-11-20",
+   "d1": -5.174927113702632,
+   "d7": -9.92087042532146,
+   "d30": -33.301596601728434,
    "n_sig": 0,
    "in_paper": true,
-   "rt_last": 0.9669,
-   "rt_d24": 1.045
+   "rt_last": 0.9072,
+   "rt_d24": -6.038
   },
   {
    "sym": "SOLUSDT",
-   "last": 73.15,
-   "date": "2026-11-19",
-   "d1": -0.665399239543718,
-   "d7": -10.487028879099359,
-   "d30": -31.340341655716163,
+   "last": 68.88,
+   "date": "2026-11-20",
+   "d1": -5.837320574162696,
+   "d7": -11.906893464637424,
+   "d30": -35.608114424605034,
    "n_sig": 0,
    "in_paper": true,
-   "rt_last": 73.03,
-   "rt_d24": 0.027
+   "rt_last": 68.77,
+   "rt_d24": -5.639
   },
   {
    "sym": "DOGEUSDT",
-   "last": 0.05823,
-   "date": "2026-11-19",
-   "d1": -0.9356924123851695,
-   "d7": -12.449255751014887,
-   "d30": -28.87504580432393,
+   "last": 0.05439,
+   "date": "2026-11-20",
+   "d1": -6.5945388974755215,
+   "d7": -15.726681127982644,
+   "d30": -33.64645602049531,
    "n_sig": 0,
    "in_paper": true,
-   "rt_last": 0.05823,
-   "rt_d24": -0.206
+   "rt_last": 0.05436,
+   "rt_d24": -6.534
   },
   {
    "sym": "AVAXUSDT",
-   "last": 6.993,
-   "date": "2026-11-19",
-   "d1": -0.5687473339968774,
-   "d7": -16.381681214875034,
-   "d30": -28.31368528959508,
+   "last": 6.521,
+   "date": "2026-11-20",
+   "d1": -6.749606749606752,
+   "d7": -20.81360048573163,
+   "d30": -32.48084489542348,
    "n_sig": 1,
    "in_paper": true,
-   "rt_last": 7.01,
-   "rt_d24": 0.791
+   "rt_last": 6.493,
+   "rt_d24": -7.256
   },
   {
    "sym": "TRXUSDT",
-   "last": 0.3104,
-   "date": "2026-11-19",
-   "d1": 0.22602518566354757,
-   "d7": -1.7099430018999384,
-   "d30": -6.336753168376575,
+   "last": 0.3022,
+   "date": "2026-11-20",
+   "d1": -2.6417525773195782,
+   "d7": -3.203074951953866,
+   "d30": -8.673315200967057,
    "n_sig": 1,
    "in_paper": true,
-   "rt_last": 0.3108,
-   "rt_d24": 0.161
+   "rt_last": 0.3019,
+   "rt_d24": -2.832
   }
  ],
  "trades": [
@@ -1417,14 +1439,14 @@
    "base_oos_ann_pct": 15.99,
    "base_oos_mdd_pct": -29.66,
    "base_full_ann_pct": 67.68,
-   "actual_ann_pct": -43.95,
-   "actual_ret_pct": -2.19,
-   "actual_mdd_pct": -2.53,
-   "days": 15,
-   "gap_pp": -59.9,
+   "actual_ann_pct": -46.11,
+   "actual_ret_pct": -2.51,
+   "actual_mdd_pct": -2.62,
+   "days": 16,
+   "gap_pp": -62.1,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 15 天（<30），不下结论"
+   "note": "纸面仅 16 天（<30），不下结论"
   },
   {
    "key": "S2_MACD2652",
@@ -1432,14 +1454,14 @@
    "base_oos_ann_pct": 9.94,
    "base_oos_mdd_pct": -22.76,
    "base_full_ann_pct": 65.08,
-   "actual_ann_pct": 5.47,
-   "actual_ret_pct": 0.2,
+   "actual_ann_pct": 5.37,
+   "actual_ret_pct": 0.22,
    "actual_mdd_pct": 0.0,
-   "days": 15,
-   "gap_pp": -4.5,
+   "days": 16,
+   "gap_pp": -4.6,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 15 天（<30），不下结论"
+   "note": "纸面仅 16 天（<30），不下结论"
   },
   {
    "key": "S3_MACD5_10_5",
@@ -1447,11 +1469,11 @@
    "base_oos_ann_pct": -2.41,
    "base_oos_mdd_pct": -41.33,
    "base_full_ann_pct": 54.96,
-   "actual_ann_pct": 5.47,
-   "actual_ret_pct": 0.2,
+   "actual_ann_pct": 5.37,
+   "actual_ret_pct": 0.22,
    "actual_mdd_pct": 0.0,
-   "days": 15,
-   "gap_pp": 7.9,
+   "days": 16,
+   "gap_pp": 7.8,
    "decay_ratio_pct": null,
    "status": "预期为负",
    "note": "回测预期年化只有 -2.4%，本来就没什么期望值 —— 这条策略优先级最低"
@@ -1462,14 +1484,14 @@
    "base_oos_ann_pct": 0.01,
    "base_oos_mdd_pct": -32.51,
    "base_full_ann_pct": 44.63,
-   "actual_ann_pct": 5.47,
-   "actual_ret_pct": 0.2,
+   "actual_ann_pct": 5.37,
+   "actual_ret_pct": 0.22,
    "actual_mdd_pct": 0.0,
-   "days": 15,
-   "gap_pp": 5.5,
+   "days": 16,
+   "gap_pp": 5.4,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 15 天（<30），不下结论"
+   "note": "纸面仅 16 天（<30），不下结论"
   },
   {
    "key": "S5_ATR_x15",
@@ -1477,14 +1499,14 @@
    "base_oos_ann_pct": 4.11,
    "base_oos_mdd_pct": -33.68,
    "base_full_ann_pct": 47.81,
-   "actual_ann_pct": -45.56,
-   "actual_ret_pct": -2.3,
+   "actual_ann_pct": -43.16,
+   "actual_ret_pct": -2.29,
    "actual_mdd_pct": -2.49,
-   "days": 15,
-   "gap_pp": -49.7,
+   "days": 16,
+   "gap_pp": -47.3,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 15 天（<30），不下结论"
+   "note": "纸面仅 16 天（<30），不下结论"
   },
   {
    "key": "M1_cci_w",
@@ -1492,14 +1514,14 @@
    "base_oos_ann_pct": 86.61,
    "base_oos_mdd_pct": -10.43,
    "base_full_ann_pct": 187.41,
-   "actual_ann_pct": 5.23,
-   "actual_ret_pct": 0.14,
+   "actual_ann_pct": 5.12,
+   "actual_ret_pct": 0.15,
    "actual_mdd_pct": 0.0,
-   "days": 11,
-   "gap_pp": -81.4,
+   "days": 12,
+   "gap_pp": -81.5,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 11 天（<30），不下结论"
+   "note": "纸面仅 12 天（<30），不下结论"
   },
   {
    "key": "M2_stoch_w",
@@ -1507,14 +1529,14 @@
    "base_oos_ann_pct": 83.29,
    "base_oos_mdd_pct": -14.42,
    "base_full_ann_pct": 170.29,
-   "actual_ann_pct": 5.23,
-   "actual_ret_pct": 0.14,
+   "actual_ann_pct": 5.12,
+   "actual_ret_pct": 0.15,
    "actual_mdd_pct": 0.0,
-   "days": 11,
-   "gap_pp": -78.1,
+   "days": 12,
+   "gap_pp": -78.2,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 11 天（<30），不下结论"
+   "note": "纸面仅 12 天（<30），不下结论"
   },
   {
    "key": "M3_roc_w",
@@ -1522,14 +1544,14 @@
    "base_oos_ann_pct": 53.82,
    "base_oos_mdd_pct": -15.0,
    "base_full_ann_pct": 104.57,
-   "actual_ann_pct": 5.23,
-   "actual_ret_pct": 0.14,
+   "actual_ann_pct": 5.12,
+   "actual_ret_pct": 0.15,
    "actual_mdd_pct": 0.0,
-   "days": 11,
-   "gap_pp": -48.6,
+   "days": 12,
+   "gap_pp": -48.7,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 11 天（<30），不下结论"
+   "note": "纸面仅 12 天（<30），不下结论"
   },
   {
    "key": "M4_chandelier_w",
@@ -1537,14 +1559,14 @@
    "base_oos_ann_pct": 47.17,
    "base_oos_mdd_pct": -14.49,
    "base_full_ann_pct": 142.42,
-   "actual_ann_pct": -72.74,
-   "actual_ret_pct": -3.15,
+   "actual_ann_pct": -68.83,
+   "actual_ret_pct": -3.14,
    "actual_mdd_pct": -3.44,
-   "days": 10,
-   "gap_pp": -119.9,
+   "days": 11,
+   "gap_pp": -116.0,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 10 天（<30），不下结论"
+   "note": "纸面仅 11 天（<30），不下结论"
   },
   {
    "key": "M5_vol_ratio_w",
@@ -1552,14 +1574,14 @@
    "base_oos_ann_pct": 39.23,
    "base_oos_mdd_pct": -30.72,
    "base_full_ann_pct": 67.95,
-   "actual_ann_pct": -7.04,
-   "actual_ret_pct": -0.18,
-   "actual_mdd_pct": -0.52,
-   "days": 10,
-   "gap_pp": -46.3,
+   "actual_ann_pct": -30.65,
+   "actual_ret_pct": -1.0,
+   "actual_mdd_pct": -1.33,
+   "days": 11,
+   "gap_pp": -69.9,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 10 天（<30），不下结论"
+   "note": "纸面仅 11 天（<30），不下结论"
   },
   {
    "key": "M6_liq_trend_w",
@@ -1567,14 +1589,14 @@
    "base_oos_ann_pct": 24.07,
    "base_oos_mdd_pct": -20.32,
    "base_full_ann_pct": 56.98,
-   "actual_ann_pct": -44.74,
-   "actual_ret_pct": -1.45,
+   "actual_ann_pct": -41.13,
+   "actual_ret_pct": -1.44,
    "actual_mdd_pct": -1.6,
-   "days": 10,
-   "gap_pp": -68.8,
+   "days": 11,
+   "gap_pp": -65.2,
    "decay_ratio_pct": null,
    "status": "样本不足",
-   "note": "纸面仅 10 天（<30），不下结论"
+   "note": "纸面仅 11 天（<30），不下结论"
   }
  ],
  "benchmark": {
@@ -1595,14 +1617,14 @@
   "预期为负": 1
  },
  "summary": {
-  "avg_pnl": -0.768,
+  "avg_pnl": -0.862,
   "with_pos": 2,
   "n_strategies": 11,
-  "btc_d7": -13.256745032185835,
-  "btc_d30": -25.342513352399145,
-  "btc_last": 61986.73,
-  "btc_rt_last": 62334.01,
-  "btc_rt_d24": -0.23,
+  "btc_d7": -13.705082413560909,
+  "btc_d30": -29.89759484154646,
+  "btc_last": 58951.51,
+  "btc_rt_last": 58986.93,
+  "btc_rt_d24": -5.117,
   "paper_coins": 8
  },
  "public": false,
